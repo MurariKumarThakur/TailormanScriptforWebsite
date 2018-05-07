@@ -199,6 +199,8 @@ public class ActionEngine extends DriverEngine {
 	{
 
 		String ActualText = name.getText();
+		
+		System.out.println(ActualText);
 
 		if (ActualText.equals(ExpectedText)) {
 

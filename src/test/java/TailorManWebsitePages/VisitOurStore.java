@@ -32,7 +32,7 @@ public class VisitOurStore extends ActionEngine {
 	WebElement firstStore ;
 	
 	
-	@FindBy(how = How.XPATH , using = "//div[@class ='hXzEwR']")
+	@FindBy(how = How.XPATH , using = "(//div[@class ='hXzEwR'])[1]")
 	
 	WebElement StoreName ;
 	
@@ -57,7 +57,7 @@ public class VisitOurStore extends ActionEngine {
 	{
 		
 	ActionEngine.waitForElementVisibility(SubscribeRemendar); 
-	ActionEngine.click(SubscribeRemendar);
+	SubscribeRemendar.click();
 	ActionEngine.verifyElementExistance(visitOurStores, EnterTextName);	
 		
 	}
@@ -72,6 +72,17 @@ public class VisitOurStore extends ActionEngine {
 		ActionEngine.verifyElementExistance(OurStoresText, headingText );
 		
 		
+		
+	}
+	
+	public void getStoreName()
+	{
+		
+		String text = StoreName.getText();
+		
+		  System.out.println(text);
+		 
+		 
 		
 	}
 	
