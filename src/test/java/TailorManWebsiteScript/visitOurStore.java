@@ -15,33 +15,38 @@ import TailorManWebsitePages.VisitOurStore;
  *
  */
 public class visitOurStore extends ActionEngine {
-	
-	
-	    String visitOurStoresText = "VISIT OUR STORES" ;
-	    
-	    String OurStoreText = "OUR STORES" ; 
 
+	String visitOurStoresText = "VISIT OUR STORES";
+
+	String OurStoreText = "OUR STORES";
+
+	@Test(priority = 1)
+	public void VerifyvisitOurStoreLinkExistance() {
+
+		VisitOurStore visitOurStoreLinkExit = PageFactory.initElements(driver, VisitOurStore.class);
+
+		visitOurStoreLinkExit.VisitOurStoreExistance(visitOurStoresText);
+
+	}
+
+	@Test(priority = 2)
+	public void VisitOurStoreLinkRedirection() {
+
+		VisitOurStore visitOurStoreLinkRedirection = PageFactory.initElements(driver, VisitOurStore.class);
+
+		visitOurStoreLinkRedirection.VisitOurStoreLinkRedirection(OurStoreText);
+
+	}
 	
-	    @Test(priority=1)      
-	    public void  VerifyvisitOurStoreLinkExistance()
-	    {
-	    	
-	VisitOurStore visitOurStoreLinkExit =      PageFactory.initElements(driver, VisitOurStore.class);	
+	public void checkCorrectStoreIsOpeningOrNot()
 	
-	        visitOurStoreLinkExit.VisitOurStoreExistance(visitOurStoresText);
-	    	
-	    }
-	    
-	    @Test(priority = 2)
-	    public void VisitOurStoreLinkRedirection()
-	    {
-	    
-	   VisitOurStore visitOurStoreLinkRedirection = 	 PageFactory.initElements(driver, VisitOurStore.class);	
-	   
-	           visitOurStoreLinkRedirection.VisitOurStoreLinkRedirection(OurStoreText);
-	           
-	           
-	    }
- 
+	{
+		
+		
+		
+		
+		
+	}
+	
 
 }

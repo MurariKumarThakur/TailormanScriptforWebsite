@@ -75,12 +75,42 @@ public class VisitOurStore extends ActionEngine {
 		
 	}
 	
-	public void getStoreName()
+	public void CheckCorrectStoreIsOpeningOrNot()
 	{
 		
-		String text = StoreName.getText();
+		String beforeClickStoreName = StoreName.getText();
 		
-		  System.out.println(text);
+		 
+		  
+		  StoreName.click();
+		  
+		  
+		  ActionEngine.waitForElementVisibility(StoreName);
+		  
+		  
+		 String afterClickStoreName = StoreName.getText();
+		 
+		   
+		   if(beforeClickStoreName.equals(afterClickStoreName))
+			   
+		   {
+			   
+			
+			 System.out.println(" Correct Store is Opening ");
+			   
+			   
+		   }
+		   
+		   else 
+			   
+		   {
+			   
+			   System.out.println("Correct Store is not Opening ");
+			   
+		   }
+		  
+	
+		   
 		 
 		 
 		
