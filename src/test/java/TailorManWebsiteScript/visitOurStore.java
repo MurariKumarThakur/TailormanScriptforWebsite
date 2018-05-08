@@ -38,15 +38,20 @@ public class visitOurStore extends ActionEngine {
 
 	}
 	
+	@Test(priority=3)
 	public void checkCorrectStoreIsOpeningOrNot()
 	
 	{
 		
+		VisitOurStore locationChecking = PageFactory.initElements(driver, VisitOurStore.class);	
 		
+		     locationChecking.VerifyCorrectStoreIsOpeningOrNotAndVerifyNumberOfLocation();
 		
 		
 		
 	}
+	
+	
 	
 
 }

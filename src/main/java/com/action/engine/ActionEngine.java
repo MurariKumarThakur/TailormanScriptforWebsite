@@ -200,7 +200,7 @@ public class ActionEngine extends DriverEngine {
 
 		String ActualText = name.getText();
 		
-		System.out.println(ActualText);
+		//System.out.println(ActualText);
 
 		if (ActualText.equals(ExpectedText)) {
 
@@ -238,5 +238,20 @@ public class ActionEngine extends DriverEngine {
 			e.printStackTrace();
 		}
 	}
+	
+	public static  void switchOnWindow()
+	
+	{
+		
+    String Name =   driver.getWindowHandle();
+    
+    driver.switchTo().window(Name);
+    
+    
+		
+		
+		
+	} 
+	
 
 }

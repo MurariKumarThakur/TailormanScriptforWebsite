@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="13179" started-at="2018-05-07T09:13:54Z" finished-at="2018-05-07T09:14:07Z">
+  <suite name="Default suite" duration-ms="17147" started-at="2018-05-08T12:27:36Z" finished-at="2018-05-08T12:27:53Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="13179" started-at="2018-05-07T09:13:54Z" finished-at="2018-05-07T09:14:07Z">
+    <test name="Default test" duration-ms="17147" started-at="2018-05-08T12:27:36Z" finished-at="2018-05-08T12:27:53Z">
       <class name="TailorManWebsiteScript.visitOurStore">
-        <test-method status="PASS" signature="openBrowser(java.lang.String)[pri:0, instance:TailorManWebsiteScript.visitOurStore@1e127982]" name="openBrowser" is-config="true" duration-ms="16038" started-at="2018-05-07T14:43:38Z" finished-at="2018-05-07T14:43:54Z">
+        <test-method status="PASS" signature="openBrowser(java.lang.String)[pri:0, instance:TailorManWebsiteScript.visitOurStore@1e127982]" name="openBrowser" is-config="true" duration-ms="16497" started-at="2018-05-08T17:57:20Z" finished-at="2018-05-08T17:57:36Z">
           <params>
             <param index="0">
               <value>
@@ -18,11 +18,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="VerifyvisitOurStoreLinkExistance()[pri:1, instance:TailorManWebsiteScript.visitOurStore@1e127982]" name="VerifyvisitOurStoreLinkExistance" duration-ms="12588" started-at="2018-05-07T14:43:54Z" finished-at="2018-05-07T14:44:07Z">
+        <test-method status="PASS" signature="VerifyvisitOurStoreLinkExistance()[pri:1, instance:TailorManWebsiteScript.visitOurStore@1e127982]" name="VerifyvisitOurStoreLinkExistance" duration-ms="11756" started-at="2018-05-08T17:57:36Z" finished-at="2018-05-08T17:57:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyvisitOurStoreLinkExistance -->
-        <test-method status="PASS" signature="startMethod(org.testng.ITestResult)[pri:0, instance:TailorManWebsiteScript.visitOurStore@1e127982]" name="startMethod" is-config="true" duration-ms="121" started-at="2018-05-07T14:44:07Z" finished-at="2018-05-07T14:44:07Z">
+        <test-method status="PASS" signature="startMethod(org.testng.ITestResult)[pri:0, instance:TailorManWebsiteScript.visitOurStore@1e127982]" name="startMethod" is-config="true" duration-ms="126" started-at="2018-05-08T17:57:48Z" finished-at="2018-05-08T17:57:48Z">
           <params>
             <param index="0">
               <value>
@@ -33,11 +33,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startMethod -->
-        <test-method status="PASS" signature="VisitOurStoreLinkRedirection()[pri:2, instance:TailorManWebsiteScript.visitOurStore@1e127982]" name="VisitOurStoreLinkRedirection" duration-ms="437" started-at="2018-05-07T14:44:07Z" finished-at="2018-05-07T14:44:07Z">
+        <test-method status="PASS" signature="VisitOurStoreLinkRedirection()[pri:2, instance:TailorManWebsiteScript.visitOurStore@1e127982]" name="VisitOurStoreLinkRedirection" duration-ms="411" started-at="2018-05-08T17:57:48Z" finished-at="2018-05-08T17:57:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VisitOurStoreLinkRedirection -->
-        <test-method status="PASS" signature="startMethod(org.testng.ITestResult)[pri:0, instance:TailorManWebsiteScript.visitOurStore@1e127982]" name="startMethod" is-config="true" duration-ms="0" started-at="2018-05-07T14:44:07Z" finished-at="2018-05-07T14:44:07Z">
+        <test-method status="PASS" signature="startMethod(org.testng.ITestResult)[pri:0, instance:TailorManWebsiteScript.visitOurStore@1e127982]" name="startMethod" is-config="true" duration-ms="0" started-at="2018-05-08T17:57:48Z" finished-at="2018-05-08T17:57:48Z">
           <params>
             <param index="0">
               <value>
@@ -48,7 +48,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startMethod -->
-        <test-method status="PASS" signature="endSuite()[pri:0, instance:TailorManWebsiteScript.visitOurStore@1e127982]" name="endSuite" is-config="true" duration-ms="2514" started-at="2018-05-07T14:44:07Z" finished-at="2018-05-07T14:44:10Z">
+        <test-method status="PASS" signature="checkCorrectStoreIsOpeningOrNot()[pri:3, instance:TailorManWebsiteScript.visitOurStore@1e127982]" name="checkCorrectStoreIsOpeningOrNot" duration-ms="4829" started-at="2018-05-08T17:57:48Z" finished-at="2018-05-08T17:57:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkCorrectStoreIsOpeningOrNot -->
+        <test-method status="PASS" signature="startMethod(org.testng.ITestResult)[pri:0, instance:TailorManWebsiteScript.visitOurStore@1e127982]" name="startMethod" is-config="true" duration-ms="1" started-at="2018-05-08T17:57:53Z" finished-at="2018-05-08T17:57:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkCorrectStoreIsOpeningOrNot status=SUCCESS method=visitOurStore.checkCorrectStoreIsOpeningOrNot()[pri:3, instance:TailorManWebsiteScript.visitOurStore@1e127982] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startMethod -->
+        <test-method status="PASS" signature="endSuite()[pri:0, instance:TailorManWebsiteScript.visitOurStore@1e127982]" name="endSuite" is-config="true" duration-ms="1922" started-at="2018-05-08T17:57:53Z" finished-at="2018-05-08T17:57:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endSuite -->
