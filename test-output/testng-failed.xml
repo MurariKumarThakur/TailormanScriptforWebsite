@@ -3,14 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="TailorManWebsiteScript.visitOurStore">
+      <class name="TailorManWebsiteScript.FollowUs">
         <methods>
           <include name="openBrowser"/>
           <include name="endSuite"/>
-          <include name="VerifyvisitOurStoreLinkExistance"/>
           <include name="startMethod"/>
+          <include name="checkSocialMediaLinkIsRedirectingOrNot"/>
         </methods>
-      </class> <!-- TailorManWebsiteScript.visitOurStore -->
+      </class> <!-- TailorManWebsiteScript.FollowUs -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

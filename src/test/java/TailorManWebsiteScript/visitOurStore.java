@@ -22,6 +22,8 @@ public class visitOurStore extends ActionEngine {
 
 	@Test(priority = 1)
 	public void VerifyvisitOurStoreLinkExistance() {
+		
+	
 
 		VisitOurStore visitOurStoreLinkExit = PageFactory.initElements(driver, VisitOurStore.class);
 
@@ -45,7 +47,7 @@ public class visitOurStore extends ActionEngine {
 		
 		VisitOurStore locationChecking = PageFactory.initElements(driver, VisitOurStore.class);	
 		
-		     locationChecking.VerifyCorrectStoreIsOpeningOrNotAndVerifyNumberOfLocation();
+	    locationChecking.VerifyCorrectStoreIsOpeningOrNotAndVerifyNumberOfLocation();
 		
 		
 		

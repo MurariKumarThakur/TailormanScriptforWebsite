@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="17147" started-at="2018-05-08T12:27:36Z" finished-at="2018-05-08T12:27:53Z">
+  <suite name="Default suite" duration-ms="39051" started-at="2018-05-09T13:14:19Z" finished-at="2018-05-09T13:14:58Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="17147" started-at="2018-05-08T12:27:36Z" finished-at="2018-05-08T12:27:53Z">
-      <class name="TailorManWebsiteScript.visitOurStore">
-        <test-method status="PASS" signature="openBrowser(java.lang.String)[pri:0, instance:TailorManWebsiteScript.visitOurStore@1e127982]" name="openBrowser" is-config="true" duration-ms="16497" started-at="2018-05-08T17:57:20Z" finished-at="2018-05-08T17:57:36Z">
+    <test name="Default test" duration-ms="39051" started-at="2018-05-09T13:14:19Z" finished-at="2018-05-09T13:14:58Z">
+      <class name="TailorManWebsiteScript.FollowUs">
+        <test-method status="PASS" signature="openBrowser(java.lang.String)[pri:0, instance:TailorManWebsiteScript.FollowUs@1e127982]" name="openBrowser" is-config="true" duration-ms="13682" started-at="2018-05-09T18:44:06Z" finished-at="2018-05-09T18:44:19Z">
           <params>
             <param index="0">
               <value>
@@ -18,56 +18,101 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="VerifyvisitOurStoreLinkExistance()[pri:1, instance:TailorManWebsiteScript.visitOurStore@1e127982]" name="VerifyvisitOurStoreLinkExistance" duration-ms="11756" started-at="2018-05-08T17:57:36Z" finished-at="2018-05-08T17:57:48Z">
+        <test-method status="PASS" signature="checkFollowUsLinkExistance()[pri:1, instance:TailorManWebsiteScript.FollowUs@1e127982]" name="checkFollowUsLinkExistance" duration-ms="14193" started-at="2018-05-09T18:44:19Z" finished-at="2018-05-09T18:44:34Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- VerifyvisitOurStoreLinkExistance -->
-        <test-method status="PASS" signature="startMethod(org.testng.ITestResult)[pri:0, instance:TailorManWebsiteScript.visitOurStore@1e127982]" name="startMethod" is-config="true" duration-ms="126" started-at="2018-05-08T17:57:48Z" finished-at="2018-05-08T17:57:48Z">
+        </test-method> <!-- checkFollowUsLinkExistance -->
+        <test-method status="PASS" signature="startMethod(org.testng.ITestResult)[pri:0, instance:TailorManWebsiteScript.FollowUs@1e127982]" name="startMethod" is-config="true" duration-ms="126" started-at="2018-05-09T18:44:34Z" finished-at="2018-05-09T18:44:34Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=VerifyvisitOurStoreLinkExistance status=SUCCESS method=visitOurStore.VerifyvisitOurStoreLinkExistance()[pri:1, instance:TailorManWebsiteScript.visitOurStore@1e127982] output={null}]]]>
+                <![CDATA[[TestResult name=checkFollowUsLinkExistance status=SUCCESS method=FollowUs.checkFollowUsLinkExistance()[pri:1, instance:TailorManWebsiteScript.FollowUs@1e127982] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startMethod -->
-        <test-method status="PASS" signature="VisitOurStoreLinkRedirection()[pri:2, instance:TailorManWebsiteScript.visitOurStore@1e127982]" name="VisitOurStoreLinkRedirection" duration-ms="411" started-at="2018-05-08T17:57:48Z" finished-at="2018-05-08T17:57:48Z">
+        <test-method status="PASS" signature="CheckFollowUsLinkIsClickableOrNot()[pri:2, instance:TailorManWebsiteScript.FollowUs@1e127982]" name="CheckFollowUsLinkIsClickableOrNot" duration-ms="202" started-at="2018-05-09T18:44:34Z" finished-at="2018-05-09T18:44:34Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- VisitOurStoreLinkRedirection -->
-        <test-method status="PASS" signature="startMethod(org.testng.ITestResult)[pri:0, instance:TailorManWebsiteScript.visitOurStore@1e127982]" name="startMethod" is-config="true" duration-ms="0" started-at="2018-05-08T17:57:48Z" finished-at="2018-05-08T17:57:48Z">
+        </test-method> <!-- CheckFollowUsLinkIsClickableOrNot -->
+        <test-method status="PASS" signature="startMethod(org.testng.ITestResult)[pri:0, instance:TailorManWebsiteScript.FollowUs@1e127982]" name="startMethod" is-config="true" duration-ms="0" started-at="2018-05-09T18:44:34Z" finished-at="2018-05-09T18:44:34Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=VisitOurStoreLinkRedirection status=SUCCESS method=visitOurStore.VisitOurStoreLinkRedirection()[pri:2, instance:TailorManWebsiteScript.visitOurStore@1e127982] output={null}]]]>
+                <![CDATA[[TestResult name=CheckFollowUsLinkIsClickableOrNot status=SUCCESS method=FollowUs.CheckFollowUsLinkIsClickableOrNot()[pri:2, instance:TailorManWebsiteScript.FollowUs@1e127982] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startMethod -->
-        <test-method status="PASS" signature="checkCorrectStoreIsOpeningOrNot()[pri:3, instance:TailorManWebsiteScript.visitOurStore@1e127982]" name="checkCorrectStoreIsOpeningOrNot" duration-ms="4829" started-at="2018-05-08T17:57:48Z" finished-at="2018-05-08T17:57:53Z">
+        <test-method status="PASS" signature="CheckFollowUsLinkIsRedirectingCorrectPageOrNot()[pri:3, instance:TailorManWebsiteScript.FollowUs@1e127982]" name="CheckFollowUsLinkIsRedirectingCorrectPageOrNot" duration-ms="185" started-at="2018-05-09T18:44:34Z" finished-at="2018-05-09T18:44:34Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- checkCorrectStoreIsOpeningOrNot -->
-        <test-method status="PASS" signature="startMethod(org.testng.ITestResult)[pri:0, instance:TailorManWebsiteScript.visitOurStore@1e127982]" name="startMethod" is-config="true" duration-ms="1" started-at="2018-05-08T17:57:53Z" finished-at="2018-05-08T17:57:53Z">
+        </test-method> <!-- CheckFollowUsLinkIsRedirectingCorrectPageOrNot -->
+        <test-method status="PASS" signature="checkSocialMediaLinkIsPresentOrNot()[pri:4, instance:TailorManWebsiteScript.FollowUs@1e127982]" name="checkSocialMediaLinkIsPresentOrNot" duration-ms="139" started-at="2018-05-09T18:44:34Z" finished-at="2018-05-09T18:44:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkSocialMediaLinkIsPresentOrNot -->
+        <test-method status="PASS" signature="startMethod(org.testng.ITestResult)[pri:0, instance:TailorManWebsiteScript.FollowUs@1e127982]" name="startMethod" is-config="true" duration-ms="0" started-at="2018-05-09T18:44:34Z" finished-at="2018-05-09T18:44:34Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=checkCorrectStoreIsOpeningOrNot status=SUCCESS method=visitOurStore.checkCorrectStoreIsOpeningOrNot()[pri:3, instance:TailorManWebsiteScript.visitOurStore@1e127982] output={null}]]]>
+                <![CDATA[[TestResult name=CheckFollowUsLinkIsRedirectingCorrectPageOrNot status=SUCCESS method=FollowUs.CheckFollowUsLinkIsRedirectingCorrectPageOrNot()[pri:3, instance:TailorManWebsiteScript.FollowUs@1e127982] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startMethod -->
-        <test-method status="PASS" signature="endSuite()[pri:0, instance:TailorManWebsiteScript.visitOurStore@1e127982]" name="endSuite" is-config="true" duration-ms="1922" started-at="2018-05-08T17:57:53Z" finished-at="2018-05-08T17:57:55Z">
+        <test-method status="PASS" signature="startMethod(org.testng.ITestResult)[pri:0, instance:TailorManWebsiteScript.FollowUs@1e127982]" name="startMethod" is-config="true" duration-ms="0" started-at="2018-05-09T18:44:34Z" finished-at="2018-05-09T18:44:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkSocialMediaLinkIsPresentOrNot status=SUCCESS method=FollowUs.checkSocialMediaLinkIsPresentOrNot()[pri:4, instance:TailorManWebsiteScript.FollowUs@1e127982] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startMethod -->
+        <test-method status="PASS" signature="checkSocialMediaLinkIsRedirectingOrNot()[pri:5, instance:TailorManWebsiteScript.FollowUs@1e127982]" name="checkSocialMediaLinkIsRedirectingOrNot" duration-ms="24115" started-at="2018-05-09T18:44:34Z" finished-at="2018-05-09T18:44:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkSocialMediaLinkIsRedirectingOrNot -->
+        <test-method status="PASS" signature="startMethod(org.testng.ITestResult)[pri:0, instance:TailorManWebsiteScript.FollowUs@1e127982]" name="startMethod" is-config="true" duration-ms="1" started-at="2018-05-09T18:44:58Z" finished-at="2018-05-09T18:44:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkSocialMediaLinkIsRedirectingOrNot status=SUCCESS method=FollowUs.checkSocialMediaLinkIsRedirectingOrNot()[pri:5, instance:TailorManWebsiteScript.FollowUs@1e127982] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startMethod -->
+        <test-method status="PASS" signature="validateFollowUsheading()[pri:6, instance:TailorManWebsiteScript.FollowUs@1e127982]" name="validateFollowUsheading" duration-ms="59" started-at="2018-05-09T18:44:58Z" finished-at="2018-05-09T18:44:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateFollowUsheading -->
+        <test-method status="PASS" signature="startMethod(org.testng.ITestResult)[pri:0, instance:TailorManWebsiteScript.FollowUs@1e127982]" name="startMethod" is-config="true" duration-ms="1" started-at="2018-05-09T18:44:58Z" finished-at="2018-05-09T18:44:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateFollowUsheading status=SUCCESS method=FollowUs.validateFollowUsheading()[pri:6, instance:TailorManWebsiteScript.FollowUs@1e127982] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startMethod -->
+        <test-method status="PASS" signature="endSuite()[pri:0, instance:TailorManWebsiteScript.FollowUs@1e127982]" name="endSuite" is-config="true" duration-ms="2042" started-at="2018-05-09T18:44:58Z" finished-at="2018-05-09T18:45:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endSuite -->
-      </class> <!-- TailorManWebsiteScript.visitOurStore -->
+      </class> <!-- TailorManWebsiteScript.FollowUs -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

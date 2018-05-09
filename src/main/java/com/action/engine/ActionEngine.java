@@ -1,13 +1,11 @@
 package com.action.engine;
 
+
 import java.util.NoSuchElementException;
+import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.FindBys;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -15,10 +13,10 @@ import org.testng.Assert;
 import com.base.engine.DriverEngine;
 
 import com.helper.utility.GetExtentReport;
-import com.relevantcodes.extentreports.ExtentReports;
+
 import com.relevantcodes.extentreports.LogStatus;
 
-import freemarker.log.Logger;
+
 
 public class ActionEngine extends DriverEngine {
 
@@ -199,8 +197,8 @@ public class ActionEngine extends DriverEngine {
 	{
 
 		String ActualText = name.getText();
-		
-		//System.out.println(ActualText);
+
+		// System.out.println(ActualText);
 
 		if (ActualText.equals(ExpectedText)) {
 
@@ -238,20 +236,46 @@ public class ActionEngine extends DriverEngine {
 			e.printStackTrace();
 		}
 	}
-	
-	public static  void switchOnWindow()
-	
+
+	public static void RedirectToChildWindowAndAgainRedirectToParent(String expectedTitle)
+
 	{
-		
-    String Name =   driver.getWindowHandle();
-    
-    driver.switchTo().window(Name);
-    
-    
-		
-		
-		
-	} 
-	
+
+	//	int windowcount = driver.getWindowHandles().size();
+
+		// System.out.println(windowcount);
+
+		String firstWindow = driver.getWindowHandle();
+
+		Set<String> webHandles = driver.getWindowHandles();
+		int i = 1;
+		for (String handle : webHandles) {
+
+			if (i == 2) {
+
+				driver.switchTo().window(handle);
+
+				String ActualTitle = driver.getTitle();
+
+				// System.out.println(ActualTitle);
+
+				Assert.assertEquals(ActualTitle, expectedTitle);
+
+				driver.close();
+
+				driver.switchTo().window(firstWindow);
+
+			}
+			i++;
+		}
+
+	}
+
+	public static void handleTailorManPopup() {
+		WebElement popuploc = driver.findElementByXPath("//i[contains(@class ,'subscribtion-close')]");
+		waitForElementVisibility(popuploc);
+		popuploc.click();
+
+	}
 
 }

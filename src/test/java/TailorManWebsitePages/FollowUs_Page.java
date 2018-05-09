@@ -26,11 +26,11 @@ public class FollowUs_Page extends ActionEngine {
 
 	WebElement facebookText;
 
-	@FindBy(how = How.XPATH, using = "//span[text()='FACEBOOK']")
+	@FindBy(how = How.XPATH, using = "//span[text()='INSTAGRAM']")
 
 	WebElement INSTAGRAM;
 
-	@FindBy(how = How.XPATH, using = "//span[text()='FACEBOOK']")
+	@FindBy(how = How.XPATH, using = "//span[text()='TWITTER']")
 
 	WebElement TWITTER;
 
@@ -41,8 +41,7 @@ public class FollowUs_Page extends ActionEngine {
 	@FindBy(how = How.XPATH, using = "//div[@class='gUYTbw']")
 
 	List<WebElement> socialMediaName;
-	
-	
+
 	@FindBy(how = How.XPATH, using = "//div[text()='FOLLOW US'][@class='gqlUWZ']")
 
 	WebElement FollowUsHeadingText;
@@ -51,10 +50,11 @@ public class FollowUs_Page extends ActionEngine {
 
 	WebElement Name;
 
+	
 	public void checkFollowUsLink()
 
 	{
-
+		ActionEngine.handleTailorManPopup();
 		String Expected = "FOLLOW US";
 
 		String followUsText = followUsLink.getText();
@@ -72,9 +72,11 @@ public class FollowUs_Page extends ActionEngine {
 
 		ActionEngine.waitForElementVisibility(facebookText);
 
-		boolean facebooklinkDispalying = facebookText.isDisplayed();
+		boolean facebooklinkDisplying = facebookText.isDisplayed();
 
-		Assert.assertEquals(facebooklinkDispalying, expectedResult);
+		// System.out.println(facebooklinkDisplying);
+
+		Assert.assertEquals(facebooklinkDisplying, expectedResult);
 
 	}
 
@@ -104,27 +106,23 @@ public class FollowUs_Page extends ActionEngine {
 
 		}
 	}
-	
-       /*
-         
-        * This  method will switch To on window 
-        *  And get title 
-        *  and then validate title
-        *  and then Close switch window
-        *  
-      
-        */
+
+	/*
+	 * 
+	 * This method will switch To on window And get title and then validate
+	 * title and then Close switch window
+	 * 
+	 * 
+	 */
 	public void validateSocialMediaTitle(WebElement socialMediaLink, String expectedTitle) {
 
 		socialMediaLink.click();
 
-		ActionEngine.switchOnWindow();
+ ActionEngine.RedirectToChildWindowAndAgainRedirectToParent(expectedTitle);
 
-		String Title = driver.getTitle();
+		
 
-		Assert.assertEquals(Title, expectedTitle);
-
-		driver.close();
+		
 
 	}
 
@@ -142,19 +140,15 @@ public class FollowUs_Page extends ActionEngine {
 		validateSocialMediaTitle(TWITTER, twitterExpectedTitle);
 
 	}
-	
-	public void validateFollowUsheading()
-	{
-	
-		String  ExpectedHeading = "FOLLOW US";
-		
-	String ActualHeading =	FollowUsHeadingText.getText();	
-	
-	  
-	 Assert.assertEquals(ActualHeading, ExpectedHeading);
-	
-		
+
+	public void validateFollowUsheading() {
+
+		String ExpectedHeading = "FOLLOW US";
+
+		String ActualHeading = FollowUsHeadingText.getText();
+
+		Assert.assertEquals(ActualHeading, ExpectedHeading);
+
 	}
-	
 
 }
