@@ -32,5 +32,6 @@ public class pathManager {
 	static String configPath = System.getProperty("user.dir")+"/config.properties";
 	
 	public static PropertiesFileReader config = new PropertiesFileReader(configPath);
-
+      
+	
 }

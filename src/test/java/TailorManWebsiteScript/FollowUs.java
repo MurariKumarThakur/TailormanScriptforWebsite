@@ -75,5 +75,15 @@ public class FollowUs extends ActionEngine {
 		
 	}
 	
+	@Test(priority=7)
+	public void checkCloseIconisClosingFormOrNot()
+	{
+		FollowUs_Page closeicon = PageFactory.initElements(driver, FollowUs_Page.class);
+
+		closeicon.validateFollowUsheading();	
+			
+	}
+	
+	
 
 }

@@ -33,7 +33,7 @@ public class VisitOurStore extends ActionEngine {
 	@FindBy(how = How.XPATH, using = "(//div[@class ='hXzEwR'])[1]")
 
 	WebElement StoreName_one;
-	
+
 	@FindBy(how = How.XPATH, using = "(//div[@class ='hXzEwR'])[2]")
 
 	WebElement StoreName_two;
@@ -45,7 +45,7 @@ public class VisitOurStore extends ActionEngine {
 	@FindBy(how = How.XPATH, using = "(//div[@class='storelocationcoutnCls'])[1]")
 
 	WebElement StoreNumber_one;
-	
+
 	@FindBy(how = How.XPATH, using = "(//div[@class='storelocationcoutnCls'])[2]")
 
 	WebElement StoreNumber_two;
@@ -59,6 +59,14 @@ public class VisitOurStore extends ActionEngine {
 	@FindBy(how = How.XPATH, using = "//div[contains(@class ,'nine wide')]")
 
 	List<WebElement> afterClickNumOfStore;
+
+	@FindBy(how = How.XPATH, using = "//i[@class='icon wrap-tm-close-icon']")
+
+	List<WebElement> followuspageCloseIcon;
+
+	@FindBy(how = How.XPATH, using = "//i[@class='icon wrap-tm-close-icon']")
+
+	WebElement followuspageIcon;
 
 	public void VisitOurStoreExistance(String EnterTextName) {
 
@@ -77,14 +85,18 @@ public class VisitOurStore extends ActionEngine {
 		ActionEngine.verifyElementExistance(OurStoresText, headingText);
 
 	}
-	  /* This method  checking after clicking location it is opening same Location or not 
-	   *  (if user click on Banglore then it is opening  Bangloare location or not )
-	   *  
-	   *  and check Number of store information is matching or not before click and after click 
-	   * 
-	   */
-	public void ClickOnLocationAndValidate(WebElement StoreName , WebElement StoreNumber)
-	
+
+	/*
+	 * This method checking after clicking location it is opening same Location
+	 * or not (if user click on Banglore then it is opening Bangloare location
+	 * or not )
+	 * 
+	 * and check Number of store information is matching or not before click and
+	 * after click
+	 * 
+	 */
+	public void ClickOnLocationAndValidate(WebElement StoreName, WebElement StoreNumber)
+
 	{
 		String beforeClickStoreName = StoreName.getText();
 
@@ -109,23 +121,35 @@ public class VisitOurStore extends ActionEngine {
 			}
 
 		}
-	
+
 		ActionEngine.waitForElementVisibility(StoreName);
 
 		String afterClickStoreName = AfterClickingStoreName.getText();
 
 		Assert.assertEquals(beforeClickStoreName, afterClickStoreName, "Both Job Location Address is not matching !!!");
-		
+
 	}
 
 	public void VerifyCorrectStoreIsOpeningOrNotAndVerifyNumberOfLocation() {
 
 		ActionEngine.scrollIntoView(firstStore);
-		
-		  // clicking on first location 
-		ClickOnLocationAndValidate(StoreName_one , StoreNumber_one);	
-		
-		ClickOnLocationAndValidate(StoreName_two , StoreNumber_two);
+
+		// clicking on first location
+		ClickOnLocationAndValidate(StoreName_one, StoreNumber_one);
+
+		ClickOnLocationAndValidate(StoreName_two, StoreNumber_two);
+	}
+
+	public void checkCloseIconClosingFollowusPageOrNot() {
+
+		int formOpen = followuspageCloseIcon.size();
+
+		followuspageIcon.click();
+
+		int formClose = followuspageCloseIcon.size();
+
+		Assert.assertTrue(formClose == 0);
+
 	}
 
 }

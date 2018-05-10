@@ -1,6 +1,5 @@
 package com.action.engine;
 
-
 import java.util.NoSuchElementException;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
@@ -15,8 +14,6 @@ import com.base.engine.DriverEngine;
 import com.helper.utility.GetExtentReport;
 
 import com.relevantcodes.extentreports.LogStatus;
-
-
 
 public class ActionEngine extends DriverEngine {
 
@@ -241,7 +238,7 @@ public class ActionEngine extends DriverEngine {
 
 	{
 
-	//	int windowcount = driver.getWindowHandles().size();
+		// int windowcount = driver.getWindowHandles().size();
 
 		// System.out.println(windowcount);
 

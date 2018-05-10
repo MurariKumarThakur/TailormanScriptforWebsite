@@ -50,7 +50,6 @@ public class FollowUs_Page extends ActionEngine {
 
 	WebElement Name;
 
-	
 	public void checkFollowUsLink()
 
 	{
@@ -118,11 +117,7 @@ public class FollowUs_Page extends ActionEngine {
 
 		socialMediaLink.click();
 
- ActionEngine.RedirectToChildWindowAndAgainRedirectToParent(expectedTitle);
-
-		
-
-		
+		ActionEngine.RedirectToChildWindowAndAgainRedirectToParent(expectedTitle);
 
 	}
 
