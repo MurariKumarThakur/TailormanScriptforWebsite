@@ -23,8 +23,8 @@ public class pathManager {
 	 
 	 // excel file obj creasion
 	 
-	  static String excelDataPath = System.getProperty("user.dir")+"/src/test/java/com/testData/manager/TestData.xlsx"; 
-	public static   ExcelReader storeData = new ExcelReader(excelDataPath);
+	  static String excelDataPath = System.getProperty("user.dir")+"/src/main/java/com/testData/manager/TestData.xls"; 
+	      public static   ExcelReader storeData = new ExcelReader(excelDataPath);
 	
 	
 	//propertyFileReader 

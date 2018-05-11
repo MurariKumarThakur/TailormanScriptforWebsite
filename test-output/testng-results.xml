@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+<testng-results skipped="0" failed="0" ignored="0" total="8" passed="8">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="13436" started-at="2018-05-10T14:11:49Z" finished-at="2018-05-10T14:12:02Z">
+  <suite name="Default suite" duration-ms="38002" started-at="2018-05-11T14:09:48Z" finished-at="2018-05-11T14:10:26Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="13436" started-at="2018-05-10T14:11:49Z" finished-at="2018-05-10T14:12:02Z">
+    <test name="Default test" duration-ms="38002" started-at="2018-05-11T14:09:48Z" finished-at="2018-05-11T14:10:26Z">
       <class name="TailorManWebsiteScript.SearchBox">
-        <test-method status="PASS" signature="openBrowser(java.lang.String)[pri:0, instance:TailorManWebsiteScript.SearchBox@1e127982]" name="openBrowser" is-config="true" duration-ms="15459" started-at="2018-05-10T19:41:33Z" finished-at="2018-05-10T19:41:49Z">
+        <test-method status="PASS" signature="openBrowser(java.lang.String)[pri:0, instance:TailorManWebsiteScript.SearchBox@60c6f5b]" name="openBrowser" is-config="true" duration-ms="15911" started-at="2018-05-11T19:39:33Z" finished-at="2018-05-11T19:39:48Z">
           <params>
             <param index="0">
               <value>
@@ -18,82 +18,127 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="checkSearchBoxExistance()[pri:1, instance:TailorManWebsiteScript.SearchBox@1e127982]" name="checkSearchBoxExistance" duration-ms="12140" started-at="2018-05-10T19:41:49Z" finished-at="2018-05-10T19:42:01Z">
+        <test-method status="PASS" signature="checkSearchBoxExistance()[pri:1, instance:TailorManWebsiteScript.SearchBox@60c6f5b]" name="checkSearchBoxExistance" duration-ms="13580" started-at="2018-05-11T19:39:48Z" finished-at="2018-05-11T19:40:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkSearchBoxExistance -->
-        <test-method status="PASS" signature="startMethod(org.testng.ITestResult)[pri:0, instance:TailorManWebsiteScript.SearchBox@1e127982]" name="startMethod" is-config="true" duration-ms="133" started-at="2018-05-10T19:42:01Z" finished-at="2018-05-10T19:42:01Z">
+        <test-method status="PASS" signature="startMethod(org.testng.ITestResult)[pri:0, instance:TailorManWebsiteScript.SearchBox@60c6f5b]" name="startMethod" is-config="true" duration-ms="178" started-at="2018-05-11T19:40:02Z" finished-at="2018-05-11T19:40:02Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=checkSearchBoxExistance status=SUCCESS method=SearchBox.checkSearchBoxExistance()[pri:1, instance:TailorManWebsiteScript.SearchBox@1e127982] output={null}]]]>
+                <![CDATA[[TestResult name=checkSearchBoxExistance status=SUCCESS method=SearchBox.checkSearchBoxExistance()[pri:1, instance:TailorManWebsiteScript.SearchBox@60c6f5b] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startMethod -->
-        <test-method status="PASS" signature="checkSearchBoxInputDisplayingOrNot()[pri:2, instance:TailorManWebsiteScript.SearchBox@1e127982]" name="checkSearchBoxInputDisplayingOrNot" duration-ms="112" started-at="2018-05-10T19:42:01Z" finished-at="2018-05-10T19:42:01Z">
+        <test-method status="PASS" signature="checkSearchBoxInputDisplayingOrNot()[pri:2, instance:TailorManWebsiteScript.SearchBox@60c6f5b]" name="checkSearchBoxInputDisplayingOrNot" duration-ms="115" started-at="2018-05-11T19:40:02Z" finished-at="2018-05-11T19:40:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkSearchBoxInputDisplayingOrNot -->
-        <test-method status="PASS" signature="startMethod(org.testng.ITestResult)[pri:0, instance:TailorManWebsiteScript.SearchBox@1e127982]" name="startMethod" is-config="true" duration-ms="0" started-at="2018-05-10T19:42:01Z" finished-at="2018-05-10T19:42:01Z">
+        <test-method status="PASS" signature="startMethod(org.testng.ITestResult)[pri:0, instance:TailorManWebsiteScript.SearchBox@60c6f5b]" name="startMethod" is-config="true" duration-ms="0" started-at="2018-05-11T19:40:02Z" finished-at="2018-05-11T19:40:02Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=checkSearchBoxInputDisplayingOrNot status=SUCCESS method=SearchBox.checkSearchBoxInputDisplayingOrNot()[pri:2, instance:TailorManWebsiteScript.SearchBox@1e127982] output={null}]]]>
+                <![CDATA[[TestResult name=checkSearchBoxInputDisplayingOrNot status=SUCCESS method=SearchBox.checkSearchBoxInputDisplayingOrNot()[pri:2, instance:TailorManWebsiteScript.SearchBox@60c6f5b] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startMethod -->
-        <test-method status="PASS" signature="verifyplaceholder()[pri:3, instance:TailorManWebsiteScript.SearchBox@1e127982]" name="verifyplaceholder" duration-ms="41" started-at="2018-05-10T19:42:01Z" finished-at="2018-05-10T19:42:01Z">
+        <test-method status="PASS" signature="verifyplaceholder()[pri:3, instance:TailorManWebsiteScript.SearchBox@60c6f5b]" name="verifyplaceholder" duration-ms="41" started-at="2018-05-11T19:40:02Z" finished-at="2018-05-11T19:40:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyplaceholder -->
-        <test-method status="PASS" signature="startMethod(org.testng.ITestResult)[pri:0, instance:TailorManWebsiteScript.SearchBox@1e127982]" name="startMethod" is-config="true" duration-ms="0" started-at="2018-05-10T19:42:01Z" finished-at="2018-05-10T19:42:01Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyplaceholder status=SUCCESS method=SearchBox.verifyplaceholder()[pri:3, instance:TailorManWebsiteScript.SearchBox@1e127982] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startMethod -->
-        <test-method status="PASS" signature="CheckUserIsAbleToTypeOrNot()[pri:4, instance:TailorManWebsiteScript.SearchBox@1e127982]" name="CheckUserIsAbleToTypeOrNot" duration-ms="124" started-at="2018-05-10T19:42:01Z" finished-at="2018-05-10T19:42:01Z">
+        <test-method status="PASS" signature="CheckUserIsAbleToTypeOrNot()[pri:4, instance:TailorManWebsiteScript.SearchBox@60c6f5b]" name="CheckUserIsAbleToTypeOrNot" duration-ms="132" started-at="2018-05-11T19:40:02Z" finished-at="2018-05-11T19:40:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CheckUserIsAbleToTypeOrNot -->
-        <test-method status="PASS" signature="startMethod(org.testng.ITestResult)[pri:0, instance:TailorManWebsiteScript.SearchBox@1e127982]" name="startMethod" is-config="true" duration-ms="1" started-at="2018-05-10T19:42:01Z" finished-at="2018-05-10T19:42:01Z">
+        <test-method status="PASS" signature="startMethod(org.testng.ITestResult)[pri:0, instance:TailorManWebsiteScript.SearchBox@60c6f5b]" name="startMethod" is-config="true" duration-ms="0" started-at="2018-05-11T19:40:02Z" finished-at="2018-05-11T19:40:02Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=CheckUserIsAbleToTypeOrNot status=SUCCESS method=SearchBox.CheckUserIsAbleToTypeOrNot()[pri:4, instance:TailorManWebsiteScript.SearchBox@1e127982] output={null}]]]>
+                <![CDATA[[TestResult name=verifyplaceholder status=SUCCESS method=SearchBox.verifyplaceholder()[pri:3, instance:TailorManWebsiteScript.SearchBox@60c6f5b] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startMethod -->
-        <test-method status="PASS" signature="applicationResponseIfResultIsNotMatching()[pri:5, instance:TailorManWebsiteScript.SearchBox@1e127982]" name="applicationResponseIfResultIsNotMatching" duration-ms="851" started-at="2018-05-10T19:42:01Z" finished-at="2018-05-10T19:42:02Z">
+        <test-method status="PASS" signature="applicationResponseIfResultIsNotMatching()[pri:5, instance:TailorManWebsiteScript.SearchBox@60c6f5b]" name="applicationResponseIfResultIsNotMatching" duration-ms="837" started-at="2018-05-11T19:40:03Z" finished-at="2018-05-11T19:40:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- applicationResponseIfResultIsNotMatching -->
-        <test-method status="PASS" signature="startMethod(org.testng.ITestResult)[pri:0, instance:TailorManWebsiteScript.SearchBox@1e127982]" name="startMethod" is-config="true" duration-ms="0" started-at="2018-05-10T19:42:02Z" finished-at="2018-05-10T19:42:02Z">
+        <test-method status="PASS" signature="startMethod(org.testng.ITestResult)[pri:0, instance:TailorManWebsiteScript.SearchBox@60c6f5b]" name="startMethod" is-config="true" duration-ms="0" started-at="2018-05-11T19:40:03Z" finished-at="2018-05-11T19:40:03Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=applicationResponseIfResultIsNotMatching status=SUCCESS method=SearchBox.applicationResponseIfResultIsNotMatching()[pri:5, instance:TailorManWebsiteScript.SearchBox@1e127982] output={null}]]]>
+                <![CDATA[[TestResult name=CheckUserIsAbleToTypeOrNot status=SUCCESS method=SearchBox.CheckUserIsAbleToTypeOrNot()[pri:4, instance:TailorManWebsiteScript.SearchBox@60c6f5b] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startMethod -->
-        <test-method status="PASS" signature="endSuite()[pri:0, instance:TailorManWebsiteScript.SearchBox@1e127982]" name="endSuite" is-config="true" duration-ms="2358" started-at="2018-05-10T19:42:02Z" finished-at="2018-05-10T19:42:04Z">
+        <test-method status="PASS" signature="startMethod(org.testng.ITestResult)[pri:0, instance:TailorManWebsiteScript.SearchBox@60c6f5b]" name="startMethod" is-config="true" duration-ms="1" started-at="2018-05-11T19:40:03Z" finished-at="2018-05-11T19:40:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=applicationResponseIfResultIsNotMatching status=SUCCESS method=SearchBox.applicationResponseIfResultIsNotMatching()[pri:5, instance:TailorManWebsiteScript.SearchBox@60c6f5b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startMethod -->
+        <test-method status="PASS" signature="searchBySkuNumber()[pri:6, instance:TailorManWebsiteScript.SearchBox@60c6f5b]" name="searchBySkuNumber" duration-ms="6539" started-at="2018-05-11T19:40:03Z" finished-at="2018-05-11T19:40:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchBySkuNumber -->
+        <test-method status="PASS" signature="SearchByProductName()[pri:7, instance:TailorManWebsiteScript.SearchBox@60c6f5b]" name="SearchByProductName" duration-ms="6845" started-at="2018-05-11T19:40:10Z" finished-at="2018-05-11T19:40:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SearchByProductName -->
+        <test-method status="PASS" signature="startMethod(org.testng.ITestResult)[pri:0, instance:TailorManWebsiteScript.SearchBox@60c6f5b]" name="startMethod" is-config="true" duration-ms="0" started-at="2018-05-11T19:40:10Z" finished-at="2018-05-11T19:40:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=searchBySkuNumber status=SUCCESS method=SearchBox.searchBySkuNumber()[pri:6, instance:TailorManWebsiteScript.SearchBox@60c6f5b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startMethod -->
+        <test-method status="PASS" signature="startMethod(org.testng.ITestResult)[pri:0, instance:TailorManWebsiteScript.SearchBox@60c6f5b]" name="startMethod" is-config="true" duration-ms="1" started-at="2018-05-11T19:40:17Z" finished-at="2018-05-11T19:40:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=SearchByProductName status=SUCCESS method=SearchBox.SearchByProductName()[pri:7, instance:TailorManWebsiteScript.SearchBox@60c6f5b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startMethod -->
+        <test-method status="PASS" signature="SearchByProductCategory()[pri:8, instance:TailorManWebsiteScript.SearchBox@60c6f5b]" name="SearchByProductCategory" duration-ms="9699" started-at="2018-05-11T19:40:17Z" finished-at="2018-05-11T19:40:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SearchByProductCategory -->
+        <test-method status="PASS" signature="startMethod(org.testng.ITestResult)[pri:0, instance:TailorManWebsiteScript.SearchBox@60c6f5b]" name="startMethod" is-config="true" duration-ms="0" started-at="2018-05-11T19:40:26Z" finished-at="2018-05-11T19:40:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=SearchByProductCategory status=SUCCESS method=SearchBox.SearchByProductCategory()[pri:8, instance:TailorManWebsiteScript.SearchBox@60c6f5b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startMethod -->
+        <test-method status="PASS" signature="endSuite()[pri:0, instance:TailorManWebsiteScript.SearchBox@60c6f5b]" name="endSuite" is-config="true" duration-ms="2200" started-at="2018-05-11T19:40:26Z" finished-at="2018-05-11T19:40:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endSuite -->

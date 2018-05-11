@@ -7,8 +7,8 @@
         <methods>
           <include name="openBrowser"/>
           <include name="endSuite"/>
-          <include name="verifyplaceholder"/>
           <include name="startMethod"/>
+          <include name="SearchByProductCategory"/>
         </methods>
       </class> <!-- TailorManWebsiteScript.SearchBox -->
     </classes>

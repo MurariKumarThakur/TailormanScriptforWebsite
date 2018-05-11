@@ -56,6 +56,8 @@ public class ExcelReader {
 		Sheet sheet = null;
 		if (workbook != null) {
 			rowNumber = getSheet(sheetName).getLastRowNum();
+			
+			
 
 		}
 		return rowNumber;
@@ -150,12 +152,12 @@ public class ExcelReader {
 					Cell cell = row.getCell(col_Num);
 					if (cell.getCellType() == Cell.CELL_TYPE_STRING) {
 
-						 System.out.println(cell.getStringCellValue());
+						// System.out.println(cell.getStringCellValue());
 						return cell.getStringCellValue();
 					} else if (cell.getCellType() == Cell.CELL_TYPE_NUMERIC) {
 						
 						
-						System.out.println(String.valueOf(cell.getNumericCellValue()));	
+						//System.out.println(String.valueOf(cell.getNumericCellValue()));	
 						
 						return String.valueOf(cell.getNumericCellValue());
 					} else if (cell.getCellType() == Cell.CELL_TYPE_BOOLEAN) {

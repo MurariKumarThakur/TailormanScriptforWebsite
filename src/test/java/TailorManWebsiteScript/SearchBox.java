@@ -60,6 +60,32 @@ public class SearchBox extends ActionEngine {
 		 ApplicationResponseIfResultNotMatching.applicationResponseIfResultIsNotMatching();	
 		
 	}
-	
+	@Test(priority=6)
+	public void searchBySkuNumber()
+	{
+		
+		SearchBox_Page SearchBySkuNumber = PageFactory.initElements(driver, SearchBox_Page.class);
+
+		SearchBySkuNumber.CheckSearchBoxSearchBySkuNumber();
+		
+	}
+	@Test(priority=7)
+	public void SearchByProductName()
+	{
+		
+
+		SearchBox_Page SearchByProductName = PageFactory.initElements(driver, SearchBox_Page.class);
+
+		SearchByProductName.CheckSearchBoxSearchByName();
+	}
+	@Test(priority=8)
+	public void SearchByProductCategory()
+	{
+		
+
+		SearchBox_Page searchByCategory = PageFactory.initElements(driver, SearchBox_Page.class);
+
+		searchByCategory.CheckSearchBoxSearchByProductCategory();
+	}
 
 }

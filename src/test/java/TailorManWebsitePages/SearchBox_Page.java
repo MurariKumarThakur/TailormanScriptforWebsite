@@ -19,8 +19,8 @@ import com.path.manager.pathManager;
  * @author Murari
  *
  */
-public class SearchBox_Page  extends ActionEngine{
-	
+public class SearchBox_Page extends ActionEngine {
+
 	@FindBy(how = How.XPATH, using = "//a[@class='ksrAiv']")
 	WebElement SearchBox;
 
@@ -42,10 +42,13 @@ public class SearchBox_Page  extends ActionEngine{
 	@FindBy(how = How.XPATH, using = "//span[@class='kUaDtV']")
 	WebElement searchedResult;
 
+	@FindBy(how = How.XPATH, using = "//li[@class='slide selected']")
+	WebElement ResultValidation;
+
 	public void checkSearchBoxExistance() {
-		
+
 		ActionEngine.handleTailorManPopup();
-		
+
 		boolean ExpectedResult = true;
 		boolean ActualResult = SearchBox.isDisplayed();
 
@@ -54,9 +57,8 @@ public class SearchBox_Page  extends ActionEngine{
 	}
 
 	public void checkSearchBoxInputDisplayingOrNot() {
-		 SearchBox.click();
-		 
-		 
+		SearchBox.click();
+
 		boolean ExpectedResult = true;
 		boolean ActualResult = SearchBoxInput.isDisplayed();
 
@@ -65,11 +67,10 @@ public class SearchBox_Page  extends ActionEngine{
 	}
 
 	public void verifyplaceholder() {
-		
-		 boolean expectedResult = true ;
+
+		boolean expectedResult = true;
 
 		boolean placeHodlerDisplaying = placeholderForSearchBox.isDisplayed();
-		 
 
 		Assert.assertEquals(expectedResult, placeHodlerDisplaying);
 
@@ -101,29 +102,33 @@ public class SearchBox_Page  extends ActionEngine{
 
 	public void CheckSearchBoxSearchBySkuNumber() {
 
-		String sheetName = "SearchByCriteria";
+		String sheetName = "SearchCriteria";
+
+		// System.out.println(pathManager.storeData.TotalRowNumber(sheetName));
 
 		for (int i = 1; i <= pathManager.storeData.TotalRowNumber(sheetName); i++) {
 
-			String skuNumber = pathManager.storeData.getColumeWiseData("SearchByCriteria", "Search By SkU Number", i);
+			String skuNumber = pathManager.storeData.getColumeWiseData(sheetName, "Search By SkU Number", i);
+
+			// System.out.println(skuNumber);
+
+			SearchBox.click();
 
 			placeholderForSearchBox.sendKeys(skuNumber);
 
 			SearchBox.click();
 
-			ActionEngine.waitForElementVisibility(searchedResult);
+			// ActionEngine.waitForElementVisibility(searchedResult);
 
-			int productSize = NoProductsSize.size();
+			boolean ExpectedResult = true;
 
-			if (productSize == 0) {
-				Assert.assertTrue(productSize == 0, "NEED TO CHCECK MANUALLY WHY SKU NUMBER HOLDED PRODUCT NOT COMING");
-				ClickOnLogo.click();
-			} else {
+			ActionEngine.waitForElementVisibility(ResultValidation);
 
-				Assert.assertTrue(productSize == 0, "NEED TO CHCECK MANUALLY WHY SKU NUMBER HOLDED PRODUCT NOT COMING");
+			boolean ActulaResult = ResultValidation.isDisplayed();
 
-				ClickOnLogo.click();
-			}
+			Assert.assertEquals(ActulaResult, ExpectedResult);
+
+			ClickOnLogo.click();
 
 		}
 
@@ -131,29 +136,27 @@ public class SearchBox_Page  extends ActionEngine{
 
 	public void CheckSearchBoxSearchByName() {
 
-		String sheetName = "SearchByCriteria";
+		String sheetName = "SearchCriteria";
 
 		for (int i = 1; i <= pathManager.storeData.TotalRowNumber(sheetName); i++) {
 
 			String productName = pathManager.storeData.getColumeWiseData(sheetName, "Search By product Name", i);
-
+			SearchBox.click();
 			placeholderForSearchBox.sendKeys(productName);
 
 			SearchBox.click();
 
-			ActionEngine.waitForElementVisibility(searchedResult);
+			// ActionEngine.waitForElementVisibility(searchedResult);
 
-			int productSize = NoProductsSize.size();
+			boolean ExpectedResult = true;
 
-			if (productSize == 0) {
-				Assert.assertTrue(productSize == 0, "NEED TO CHCECK MANUALLY WHY SKU NUMBER HOLDED PRODUCT NOT COMING");
-				ClickOnLogo.click();
+			ActionEngine.waitForElementVisibility(ResultValidation);
 
-			} else {
+			boolean ActulaResult = ResultValidation.isDisplayed();
 
-				Assert.assertTrue(productSize == 0, "NEED TO CHCECK MANUALLY WHY SKU NUMBER HOLDED PRODUCT NOT COMING");
-				ClickOnLogo.click();
-			}
+			Assert.assertEquals(ActulaResult, ExpectedResult);
+
+			ClickOnLogo.click();
 
 		}
 
@@ -161,35 +164,29 @@ public class SearchBox_Page  extends ActionEngine{
 
 	public void CheckSearchBoxSearchByProductCategory() {
 
-		String sheetName = "SearchByCriteria";
+		String sheetName = "SearchCriteria";
 
 		for (int i = 1; i <= pathManager.storeData.TotalRowNumber(sheetName); i++) {
 
 			String CategoryName = pathManager.storeData.getColumeWiseData(sheetName, "Search by Category", i);
-
+			SearchBox.click();
 			placeholderForSearchBox.sendKeys(CategoryName);
 
 			SearchBox.click();
 
-			ActionEngine.waitForElementVisibility(searchedResult);
+			// ActionEngine.waitForElementVisibility(searchedResult);
 
-			int productSize = NoProductsSize.size();
+			boolean ExpectedResult = true;
 
-			if (productSize == 0) {
-				Assert.assertTrue(productSize == 0, "NEED TO CHCECK MANUALLY WHY SKU NUMBER HOLDED PRODUCT NOT COMING");
-				ClickOnLogo.click();
+			ActionEngine.waitForElementVisibility(ResultValidation);
 
-			} else {
+			boolean ActulaResult = ResultValidation.isDisplayed();
 
-				Assert.assertTrue(productSize == 0, "NEED TO CHCECK MANUALLY WHY SKU NUMBER HOLDED PRODUCT NOT COMING");
-				ClickOnLogo.click();
-			}
+			Assert.assertEquals(ActulaResult, ExpectedResult);
+
+			ClickOnLogo.click();
 
 		}
 
 	}
-	
-	
-	
-
 }
