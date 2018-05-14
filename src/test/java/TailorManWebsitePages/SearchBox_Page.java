@@ -57,6 +57,9 @@ public class SearchBox_Page extends ActionEngine {
 	}
 
 	public void checkSearchBoxInputDisplayingOrNot() {
+		
+		ActionEngine.waitForElementVisibility(SearchBox);
+		
 		SearchBox.click();
 
 		boolean ExpectedResult = true;

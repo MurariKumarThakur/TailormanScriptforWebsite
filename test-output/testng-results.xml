@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="8" passed="8">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="38002" started-at="2018-05-11T14:09:48Z" finished-at="2018-05-11T14:10:26Z">
+  <suite name="Default suite" duration-ms="36931" started-at="2018-05-14T13:58:30Z" finished-at="2018-05-14T13:59:07Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="38002" started-at="2018-05-11T14:09:48Z" finished-at="2018-05-11T14:10:26Z">
+    <test name="Default test" duration-ms="36931" started-at="2018-05-14T13:58:30Z" finished-at="2018-05-14T13:59:07Z">
       <class name="TailorManWebsiteScript.SearchBox">
-        <test-method status="PASS" signature="openBrowser(java.lang.String)[pri:0, instance:TailorManWebsiteScript.SearchBox@60c6f5b]" name="openBrowser" is-config="true" duration-ms="15911" started-at="2018-05-11T19:39:33Z" finished-at="2018-05-11T19:39:48Z">
+        <test-method status="PASS" signature="openBrowser(java.lang.String)[pri:0, instance:TailorManWebsiteScript.SearchBox@60c6f5b]" name="openBrowser" is-config="true" duration-ms="20319" started-at="2018-05-14T19:28:10Z" finished-at="2018-05-14T19:28:30Z">
           <params>
             <param index="0">
               <value>
@@ -18,11 +18,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="checkSearchBoxExistance()[pri:1, instance:TailorManWebsiteScript.SearchBox@60c6f5b]" name="checkSearchBoxExistance" duration-ms="13580" started-at="2018-05-11T19:39:48Z" finished-at="2018-05-11T19:40:02Z">
+        <test-method status="PASS" signature="checkSearchBoxExistance()[pri:1, instance:TailorManWebsiteScript.SearchBox@60c6f5b]" name="checkSearchBoxExistance" duration-ms="12444" started-at="2018-05-14T19:28:30Z" finished-at="2018-05-14T19:28:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkSearchBoxExistance -->
-        <test-method status="PASS" signature="startMethod(org.testng.ITestResult)[pri:0, instance:TailorManWebsiteScript.SearchBox@60c6f5b]" name="startMethod" is-config="true" duration-ms="178" started-at="2018-05-11T19:40:02Z" finished-at="2018-05-11T19:40:02Z">
+        <test-method status="PASS" signature="startMethod(org.testng.ITestResult)[pri:0, instance:TailorManWebsiteScript.SearchBox@60c6f5b]" name="startMethod" is-config="true" duration-ms="167" started-at="2018-05-14T19:28:43Z" finished-at="2018-05-14T19:28:43Z">
           <params>
             <param index="0">
               <value>
@@ -33,11 +33,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startMethod -->
-        <test-method status="PASS" signature="checkSearchBoxInputDisplayingOrNot()[pri:2, instance:TailorManWebsiteScript.SearchBox@60c6f5b]" name="checkSearchBoxInputDisplayingOrNot" duration-ms="115" started-at="2018-05-11T19:40:02Z" finished-at="2018-05-11T19:40:02Z">
+        <test-method status="PASS" signature="checkSearchBoxInputDisplayingOrNot()[pri:2, instance:TailorManWebsiteScript.SearchBox@60c6f5b]" name="checkSearchBoxInputDisplayingOrNot" duration-ms="139" started-at="2018-05-14T19:28:43Z" finished-at="2018-05-14T19:28:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkSearchBoxInputDisplayingOrNot -->
-        <test-method status="PASS" signature="startMethod(org.testng.ITestResult)[pri:0, instance:TailorManWebsiteScript.SearchBox@60c6f5b]" name="startMethod" is-config="true" duration-ms="0" started-at="2018-05-11T19:40:02Z" finished-at="2018-05-11T19:40:02Z">
+        <test-method status="PASS" signature="startMethod(org.testng.ITestResult)[pri:0, instance:TailorManWebsiteScript.SearchBox@60c6f5b]" name="startMethod" is-config="true" duration-ms="1" started-at="2018-05-14T19:28:43Z" finished-at="2018-05-14T19:28:43Z">
           <params>
             <param index="0">
               <value>
@@ -48,15 +48,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startMethod -->
-        <test-method status="PASS" signature="verifyplaceholder()[pri:3, instance:TailorManWebsiteScript.SearchBox@60c6f5b]" name="verifyplaceholder" duration-ms="41" started-at="2018-05-11T19:40:02Z" finished-at="2018-05-11T19:40:02Z">
+        <test-method status="PASS" signature="verifyplaceholder()[pri:3, instance:TailorManWebsiteScript.SearchBox@60c6f5b]" name="verifyplaceholder" duration-ms="45" started-at="2018-05-14T19:28:43Z" finished-at="2018-05-14T19:28:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyplaceholder -->
-        <test-method status="PASS" signature="CheckUserIsAbleToTypeOrNot()[pri:4, instance:TailorManWebsiteScript.SearchBox@60c6f5b]" name="CheckUserIsAbleToTypeOrNot" duration-ms="132" started-at="2018-05-11T19:40:02Z" finished-at="2018-05-11T19:40:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CheckUserIsAbleToTypeOrNot -->
-        <test-method status="PASS" signature="startMethod(org.testng.ITestResult)[pri:0, instance:TailorManWebsiteScript.SearchBox@60c6f5b]" name="startMethod" is-config="true" duration-ms="0" started-at="2018-05-11T19:40:02Z" finished-at="2018-05-11T19:40:02Z">
+        <test-method status="PASS" signature="startMethod(org.testng.ITestResult)[pri:0, instance:TailorManWebsiteScript.SearchBox@60c6f5b]" name="startMethod" is-config="true" duration-ms="0" started-at="2018-05-14T19:28:43Z" finished-at="2018-05-14T19:28:43Z">
           <params>
             <param index="0">
               <value>
@@ -67,11 +63,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startMethod -->
-        <test-method status="PASS" signature="applicationResponseIfResultIsNotMatching()[pri:5, instance:TailorManWebsiteScript.SearchBox@60c6f5b]" name="applicationResponseIfResultIsNotMatching" duration-ms="837" started-at="2018-05-11T19:40:03Z" finished-at="2018-05-11T19:40:03Z">
+        <test-method status="PASS" signature="CheckUserIsAbleToTypeOrNot()[pri:4, instance:TailorManWebsiteScript.SearchBox@60c6f5b]" name="CheckUserIsAbleToTypeOrNot" duration-ms="131" started-at="2018-05-14T19:28:43Z" finished-at="2018-05-14T19:28:43Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- applicationResponseIfResultIsNotMatching -->
-        <test-method status="PASS" signature="startMethod(org.testng.ITestResult)[pri:0, instance:TailorManWebsiteScript.SearchBox@60c6f5b]" name="startMethod" is-config="true" duration-ms="0" started-at="2018-05-11T19:40:03Z" finished-at="2018-05-11T19:40:03Z">
+        </test-method> <!-- CheckUserIsAbleToTypeOrNot -->
+        <test-method status="PASS" signature="startMethod(org.testng.ITestResult)[pri:0, instance:TailorManWebsiteScript.SearchBox@60c6f5b]" name="startMethod" is-config="true" duration-ms="1" started-at="2018-05-14T19:28:43Z" finished-at="2018-05-14T19:28:43Z">
           <params>
             <param index="0">
               <value>
@@ -82,7 +78,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startMethod -->
-        <test-method status="PASS" signature="startMethod(org.testng.ITestResult)[pri:0, instance:TailorManWebsiteScript.SearchBox@60c6f5b]" name="startMethod" is-config="true" duration-ms="1" started-at="2018-05-11T19:40:03Z" finished-at="2018-05-11T19:40:03Z">
+        <test-method status="PASS" signature="applicationResponseIfResultIsNotMatching()[pri:5, instance:TailorManWebsiteScript.SearchBox@60c6f5b]" name="applicationResponseIfResultIsNotMatching" duration-ms="853" started-at="2018-05-14T19:28:43Z" finished-at="2018-05-14T19:28:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- applicationResponseIfResultIsNotMatching -->
+        <test-method status="PASS" signature="searchBySkuNumber()[pri:6, instance:TailorManWebsiteScript.SearchBox@60c6f5b]" name="searchBySkuNumber" duration-ms="6515" started-at="2018-05-14T19:28:44Z" finished-at="2018-05-14T19:28:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchBySkuNumber -->
+        <test-method status="PASS" signature="startMethod(org.testng.ITestResult)[pri:0, instance:TailorManWebsiteScript.SearchBox@60c6f5b]" name="startMethod" is-config="true" duration-ms="0" started-at="2018-05-14T19:28:44Z" finished-at="2018-05-14T19:28:44Z">
           <params>
             <param index="0">
               <value>
@@ -93,15 +97,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startMethod -->
-        <test-method status="PASS" signature="searchBySkuNumber()[pri:6, instance:TailorManWebsiteScript.SearchBox@60c6f5b]" name="searchBySkuNumber" duration-ms="6539" started-at="2018-05-11T19:40:03Z" finished-at="2018-05-11T19:40:10Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchBySkuNumber -->
-        <test-method status="PASS" signature="SearchByProductName()[pri:7, instance:TailorManWebsiteScript.SearchBox@60c6f5b]" name="SearchByProductName" duration-ms="6845" started-at="2018-05-11T19:40:10Z" finished-at="2018-05-11T19:40:17Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SearchByProductName -->
-        <test-method status="PASS" signature="startMethod(org.testng.ITestResult)[pri:0, instance:TailorManWebsiteScript.SearchBox@60c6f5b]" name="startMethod" is-config="true" duration-ms="0" started-at="2018-05-11T19:40:10Z" finished-at="2018-05-11T19:40:10Z">
+        <test-method status="PASS" signature="startMethod(org.testng.ITestResult)[pri:0, instance:TailorManWebsiteScript.SearchBox@60c6f5b]" name="startMethod" is-config="true" duration-ms="0" started-at="2018-05-14T19:28:50Z" finished-at="2018-05-14T19:28:50Z">
           <params>
             <param index="0">
               <value>
@@ -112,7 +108,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startMethod -->
-        <test-method status="PASS" signature="startMethod(org.testng.ITestResult)[pri:0, instance:TailorManWebsiteScript.SearchBox@60c6f5b]" name="startMethod" is-config="true" duration-ms="1" started-at="2018-05-11T19:40:17Z" finished-at="2018-05-11T19:40:17Z">
+        <test-method status="PASS" signature="SearchByProductName()[pri:7, instance:TailorManWebsiteScript.SearchBox@60c6f5b]" name="SearchByProductName" duration-ms="6812" started-at="2018-05-14T19:28:50Z" finished-at="2018-05-14T19:28:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SearchByProductName -->
+        <test-method status="PASS" signature="startMethod(org.testng.ITestResult)[pri:0, instance:TailorManWebsiteScript.SearchBox@60c6f5b]" name="startMethod" is-config="true" duration-ms="0" started-at="2018-05-14T19:28:57Z" finished-at="2018-05-14T19:28:57Z">
           <params>
             <param index="0">
               <value>
@@ -123,11 +123,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startMethod -->
-        <test-method status="PASS" signature="SearchByProductCategory()[pri:8, instance:TailorManWebsiteScript.SearchBox@60c6f5b]" name="SearchByProductCategory" duration-ms="9699" started-at="2018-05-11T19:40:17Z" finished-at="2018-05-11T19:40:26Z">
+        <test-method status="PASS" signature="SearchByProductCategory()[pri:8, instance:TailorManWebsiteScript.SearchBox@60c6f5b]" name="SearchByProductCategory" duration-ms="9788" started-at="2018-05-14T19:28:57Z" finished-at="2018-05-14T19:29:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SearchByProductCategory -->
-        <test-method status="PASS" signature="startMethod(org.testng.ITestResult)[pri:0, instance:TailorManWebsiteScript.SearchBox@60c6f5b]" name="startMethod" is-config="true" duration-ms="0" started-at="2018-05-11T19:40:26Z" finished-at="2018-05-11T19:40:26Z">
+        <test-method status="PASS" signature="startMethod(org.testng.ITestResult)[pri:0, instance:TailorManWebsiteScript.SearchBox@60c6f5b]" name="startMethod" is-config="true" duration-ms="0" started-at="2018-05-14T19:29:07Z" finished-at="2018-05-14T19:29:07Z">
           <params>
             <param index="0">
               <value>
@@ -138,7 +138,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startMethod -->
-        <test-method status="PASS" signature="endSuite()[pri:0, instance:TailorManWebsiteScript.SearchBox@60c6f5b]" name="endSuite" is-config="true" duration-ms="2200" started-at="2018-05-11T19:40:26Z" finished-at="2018-05-11T19:40:29Z">
+        <test-method status="PASS" signature="endSuite()[pri:0, instance:TailorManWebsiteScript.SearchBox@60c6f5b]" name="endSuite" is-config="true" duration-ms="2936" started-at="2018-05-14T19:29:07Z" finished-at="2018-05-14T19:29:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endSuite -->
