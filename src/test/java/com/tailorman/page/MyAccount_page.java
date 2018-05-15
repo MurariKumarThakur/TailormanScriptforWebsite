@@ -1,7 +1,7 @@
 /**
  * 
  */
-package TailorManWebsitePages;
+package com.tailorman.page;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -11,8 +11,7 @@ import org.testng.annotations.Test;
 
 import com.action.engine.ActionEngine;
 import com.path.manager.pathManager;
-
-import TailorManWebsiteScript.MyAccount;
+import com.tailorman.script.MyAccount;
 
 /**
  * @author Murari

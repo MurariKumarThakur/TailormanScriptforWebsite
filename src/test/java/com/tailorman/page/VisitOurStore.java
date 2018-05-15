@@ -1,7 +1,7 @@
 /**
  * 
  */
-package TailorManWebsitePages;
+package com.tailorman.page;
 
 import java.util.List;
 

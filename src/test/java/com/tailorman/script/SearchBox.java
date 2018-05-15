@@ -1,15 +1,14 @@
 /**
  * 
  */
-package TailorManWebsiteScript;
+package com.tailorman.script;
 
 import org.openqa.selenium.support.PageFactory;
 
 import org.testng.annotations.Test;
 
 import com.action.engine.ActionEngine;
-
-import TailorManWebsitePages.SearchBox_Page;
+import com.tailorman.page.SearchBox_Page;
 
 /**
  * @author Murari ;

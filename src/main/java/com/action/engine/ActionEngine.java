@@ -274,9 +274,28 @@ public class ActionEngine extends DriverEngine {
 		popuploc.click();
 
 	}
-	
-	
-	
-	
+
+	public static void checkElementExistance(WebElement elm) {
+
+		boolean expectedResult = true;
+
+		waitForElementVisibility(elm);
+
+		boolean elmIsDisplay = elm.isDisplayed();
+
+		Assert.assertEquals(elmIsDisplay, expectedResult);
+
+	}
+
+	public static void checkElementIsClickableOrNot(WebElement elmLoc, WebElement expectedLoc) {
+
+		boolean expectedResult = true;
+		waitForElementVisibility(elmLoc);
+		elmLoc.click();
+		waitForElementVisibility(expectedLoc);
+		boolean expectedTextIsDisplaying = expectedLoc.isDisplayed();
+		Assert.assertEquals(expectedTextIsDisplaying, expectedResult);
+
+	}
 
 }
