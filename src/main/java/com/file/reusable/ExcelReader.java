@@ -112,7 +112,7 @@ public class ExcelReader {
 
 		sheet = getSheet(sheetName);
 		List list = new ArrayList();
-		System.out.println(sheet.getLastRowNum());
+		//System.out.println(sheet.getLastRowNum());
 		for (int i = 0; i <= sheet.getLastRowNum(); i++) {
 
 			row = sheet.getRow(i);
@@ -150,8 +150,11 @@ public class ExcelReader {
 
 					row = getSheet(sheetName).getRow(rowNum);
 					Cell cell = row.getCell(col_Num);
+					
+				//	System.out.println(cell.getCellType());
+					
 					if (cell.getCellType() == Cell.CELL_TYPE_STRING) {
-
+                      
 						// System.out.println(cell.getStringCellValue());
 						return cell.getStringCellValue();
 					} else if (cell.getCellType() == Cell.CELL_TYPE_NUMERIC) {

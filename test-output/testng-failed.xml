@@ -3,14 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="TailorManWebsiteScript.MyAccount">
+      <class name="com.tailorman.script.Login">
         <methods>
+          <include name="loginWithMultipleSetOfData"/>
           <include name="openBrowser"/>
           <include name="endSuite"/>
-          <include name="CheckSignOutFunctionalityIsWorking"/>
           <include name="startMethod"/>
         </methods>
-      </class> <!-- TailorManWebsiteScript.MyAccount -->
+      </class> <!-- com.tailorman.script.Login -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
