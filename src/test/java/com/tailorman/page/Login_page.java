@@ -121,7 +121,7 @@ public class Login_page extends ActionEngine {
 
 			ActionEngine.sendKeys(userNameField,
 					pathManager.storeData.getColumeWiseData("LoginFunction", "UserName", i));
-              System.out.println(pathManager.storeData.getColumeWiseData("LoginFunction", "Password", i));
+             // System.out.println(pathManager.storeData.getColumeWiseData("LoginFunction", "Password", i));
 			ActionEngine.sendKeys(passwrodField,
 			   
 					pathManager.storeData.getColumeWiseData("LoginFunction", "Password", i));
