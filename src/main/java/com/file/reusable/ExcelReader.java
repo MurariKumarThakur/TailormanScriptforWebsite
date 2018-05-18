@@ -56,8 +56,6 @@ public class ExcelReader {
 		Sheet sheet = null;
 		if (workbook != null) {
 			rowNumber = getSheet(sheetName).getLastRowNum();
-			
-			
 
 		}
 		return rowNumber;
@@ -112,7 +110,7 @@ public class ExcelReader {
 
 		sheet = getSheet(sheetName);
 		List list = new ArrayList();
-		//System.out.println(sheet.getLastRowNum());
+		// System.out.println(sheet.getLastRowNum());
 		for (int i = 0; i <= sheet.getLastRowNum(); i++) {
 
 			row = sheet.getRow(i);
@@ -150,18 +148,19 @@ public class ExcelReader {
 
 					row = getSheet(sheetName).getRow(rowNum);
 					Cell cell = row.getCell(col_Num);
-					
-				//	System.out.println(cell.getCellType());
-					
+
+					 System.out.println(cell);
+
+					// System.out.println(cell.getCellType());
+
 					if (cell.getCellType() == Cell.CELL_TYPE_STRING) {
-                      
+
 						// System.out.println(cell.getStringCellValue());
 						return cell.getStringCellValue();
 					} else if (cell.getCellType() == Cell.CELL_TYPE_NUMERIC) {
-						
-						
-						//System.out.println(String.valueOf(cell.getNumericCellValue()));	
-						
+
+						// System.out.println(String.valueOf(cell.getNumericCellValue()));
+
 						return String.valueOf(cell.getNumericCellValue());
 					} else if (cell.getCellType() == Cell.CELL_TYPE_BOOLEAN) {
 						return String.valueOf(cell.getBooleanCellValue());
@@ -178,7 +177,7 @@ public class ExcelReader {
 			e.printStackTrace();
 		}
 
-		return null;
+		return "";
 	}
 
 }

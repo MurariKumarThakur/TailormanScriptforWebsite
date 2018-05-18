@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="39239" started-at="2018-05-17T14:27:38Z" finished-at="2018-05-17T14:28:17Z">
+  <suite name="Default suite" duration-ms="100940" started-at="2018-05-18T14:56:51Z" finished-at="2018-05-18T14:58:32Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="39239" started-at="2018-05-17T14:27:38Z" finished-at="2018-05-17T14:28:17Z">
-      <class name="com.tailorman.script.Login">
-        <test-method status="PASS" signature="openBrowser(java.lang.String)[pri:0, instance:com.tailorman.script.Login@1e127982]" name="openBrowser" is-config="true" duration-ms="16271" started-at="2018-05-17T19:57:21Z" finished-at="2018-05-17T19:57:38Z">
+    <test name="Default test" duration-ms="100940" started-at="2018-05-18T14:56:51Z" finished-at="2018-05-18T14:58:32Z">
+      <class name="com.tailorman.script.Registration">
+        <test-method status="PASS" signature="openBrowser(java.lang.String)[pri:0, instance:com.tailorman.script.Registration@1e127982]" name="openBrowser" is-config="true" duration-ms="13948" started-at="2018-05-18T20:26:37Z" finished-at="2018-05-18T20:26:51Z">
           <params>
             <param index="0">
               <value>
@@ -18,56 +18,56 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="fieldVerificationInLoginpageSection()[pri:1, instance:com.tailorman.script.Login@1e127982]" name="fieldVerificationInLoginpageSection" duration-ms="14346" started-at="2018-05-17T19:57:38Z" finished-at="2018-05-17T19:57:52Z">
+        <test-method status="PASS" signature="verifyRegistrationFieldExistance()[pri:1, instance:com.tailorman.script.Registration@1e127982]" name="verifyRegistrationFieldExistance" duration-ms="30611" started-at="2018-05-18T20:26:51Z" finished-at="2018-05-18T20:27:22Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- fieldVerificationInLoginpageSection -->
-        <test-method status="PASS" signature="startMethod(org.testng.ITestResult)[pri:0, instance:com.tailorman.script.Login@1e127982]" name="startMethod" is-config="true" duration-ms="177" started-at="2018-05-17T19:57:52Z" finished-at="2018-05-17T19:57:52Z">
+        </test-method> <!-- verifyRegistrationFieldExistance -->
+        <test-method status="PASS" signature="startMethod(org.testng.ITestResult)[pri:0, instance:com.tailorman.script.Registration@1e127982]" name="startMethod" is-config="true" duration-ms="154" started-at="2018-05-18T20:27:22Z" finished-at="2018-05-18T20:27:22Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=fieldVerificationInLoginpageSection status=SUCCESS method=Login.fieldVerificationInLoginpageSection()[pri:1, instance:com.tailorman.script.Login@1e127982] output={null}]]]>
+                <![CDATA[[TestResult name=verifyRegistrationFieldExistance status=SUCCESS method=Registration.verifyRegistrationFieldExistance()[pri:1, instance:com.tailorman.script.Registration@1e127982] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startMethod -->
-        <test-method status="PASS" signature="checkAllLinkIsRedirectingToCorrectPageOrNotOrLinkIsClickableOrNot()[pri:2, instance:com.tailorman.script.Login@1e127982]" name="checkAllLinkIsRedirectingToCorrectPageOrNotOrLinkIsClickableOrNot" duration-ms="22403" started-at="2018-05-17T19:57:52Z" finished-at="2018-05-17T19:58:15Z">
+        <test-method status="PASS" signature="checkUserIsAbleToEnterDataOrNotInInputSection()[pri:2, instance:com.tailorman.script.Registration@1e127982]" name="checkUserIsAbleToEnterDataOrNotInInputSection" duration-ms="57993" started-at="2018-05-18T20:27:22Z" finished-at="2018-05-18T20:28:20Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- checkAllLinkIsRedirectingToCorrectPageOrNotOrLinkIsClickableOrNot -->
-        <test-method status="PASS" signature="startMethod(org.testng.ITestResult)[pri:0, instance:com.tailorman.script.Login@1e127982]" name="startMethod" is-config="true" duration-ms="1" started-at="2018-05-17T19:58:15Z" finished-at="2018-05-17T19:58:15Z">
+        </test-method> <!-- checkUserIsAbleToEnterDataOrNotInInputSection -->
+        <test-method status="PASS" signature="startMethod(org.testng.ITestResult)[pri:0, instance:com.tailorman.script.Registration@1e127982]" name="startMethod" is-config="true" duration-ms="0" started-at="2018-05-18T20:28:20Z" finished-at="2018-05-18T20:28:20Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=checkAllLinkIsRedirectingToCorrectPageOrNotOrLinkIsClickableOrNot status=SUCCESS method=Login.checkAllLinkIsRedirectingToCorrectPageOrNotOrLinkIsClickableOrNot()[pri:2, instance:com.tailorman.script.Login@1e127982] output={null}]]]>
+                <![CDATA[[TestResult name=checkUserIsAbleToEnterDataOrNotInInputSection status=SUCCESS method=Registration.checkUserIsAbleToEnterDataOrNotInInputSection()[pri:2, instance:com.tailorman.script.Registration@1e127982] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startMethod -->
-        <test-method status="PASS" signature="loginWithMultipleSetOfData()[pri:3, instance:com.tailorman.script.Login@1e127982]" name="loginWithMultipleSetOfData" duration-ms="2279" started-at="2018-05-17T19:58:15Z" finished-at="2018-05-17T19:58:17Z">
+        <test-method status="PASS" signature="checkRegistrationFunctionalityWithMulitpleData()[pri:3, instance:com.tailorman.script.Registration@1e127982]" name="checkRegistrationFunctionalityWithMulitpleData" duration-ms="12158" started-at="2018-05-18T20:28:20Z" finished-at="2018-05-18T20:28:32Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginWithMultipleSetOfData -->
-        <test-method status="PASS" signature="startMethod(org.testng.ITestResult)[pri:0, instance:com.tailorman.script.Login@1e127982]" name="startMethod" is-config="true" duration-ms="0" started-at="2018-05-17T19:58:17Z" finished-at="2018-05-17T19:58:17Z">
+        </test-method> <!-- checkRegistrationFunctionalityWithMulitpleData -->
+        <test-method status="PASS" signature="startMethod(org.testng.ITestResult)[pri:0, instance:com.tailorman.script.Registration@1e127982]" name="startMethod" is-config="true" duration-ms="0" started-at="2018-05-18T20:28:32Z" finished-at="2018-05-18T20:28:32Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=loginWithMultipleSetOfData status=SUCCESS method=Login.loginWithMultipleSetOfData()[pri:3, instance:com.tailorman.script.Login@1e127982] output={null}]]]>
+                <![CDATA[[TestResult name=checkRegistrationFunctionalityWithMulitpleData status=SUCCESS method=Registration.checkRegistrationFunctionalityWithMulitpleData()[pri:3, instance:com.tailorman.script.Registration@1e127982] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startMethod -->
-        <test-method status="PASS" signature="endSuite()[pri:0, instance:com.tailorman.script.Login@1e127982]" name="endSuite" is-config="true" duration-ms="2871" started-at="2018-05-17T19:58:17Z" finished-at="2018-05-17T19:58:20Z">
+        <test-method status="PASS" signature="endSuite()[pri:0, instance:com.tailorman.script.Registration@1e127982]" name="endSuite" is-config="true" duration-ms="2018" started-at="2018-05-18T20:28:32Z" finished-at="2018-05-18T20:28:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endSuite -->
-      </class> <!-- com.tailorman.script.Login -->
+      </class> <!-- com.tailorman.script.Registration -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -1,5 +1,8 @@
 package com.action.engine;
 
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
 import java.util.NoSuchElementException;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
@@ -296,6 +299,17 @@ public class ActionEngine extends DriverEngine {
 		boolean expectedTextIsDisplaying = expectedLoc.isDisplayed();
 		Assert.assertEquals(expectedTextIsDisplaying, expectedResult);
 
+	}
+	
+	public static void clickOnEnterButton()
+	{
+		try {
+			Robot r = new Robot();
+			r.keyPress(KeyEvent.VK_ENTER);
+		} catch (AWTException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 }
