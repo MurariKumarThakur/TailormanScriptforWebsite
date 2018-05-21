@@ -35,7 +35,11 @@ public class MadeToMeasure_page extends ActionEngine {
 	@FindBy(how = How.XPATH, using = "//div[@class='headerlink item-menu-cls'][text()='Book A Home visit']")
 	WebElement bookAHomeVisitLink;
 	
+	@FindBy(how = How.XPATH, using = "//div[@class='tm_book_a_home_visit hero-button']")
+	WebElement bookAHomeVisitButton;
 	
+	@FindBy(how = How.XPATH, using = "//div[text()='Our Showrooms']")
+	WebElement OurShowroomsText;
 
 	public void checkMadeToMeasureLinkIsWorking() {
 
@@ -81,7 +85,8 @@ public class MadeToMeasure_page extends ActionEngine {
 	public void CheckAllGivenLinkIsClickableOrNot() {
 		
 		CheckLinkIsClickableOrNot(ATHomeLink, bookAHomeVisitLink);
-		CheckLinkIsClickableOrNot(ATHomeLink, bookAHomeVisitLink);
+		CheckLinkIsClickableOrNot(videoLink, bookAHomeVisitButton);
+		CheckLinkIsClickableOrNot(videoLink, bookAHomeVisitButton);
 		
 
 	}

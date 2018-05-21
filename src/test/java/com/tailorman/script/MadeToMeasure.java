@@ -8,5 +8,8 @@ package com.tailorman.script;
  *
  */
 public class MadeToMeasure {
+	
+	
+	
 
 }
