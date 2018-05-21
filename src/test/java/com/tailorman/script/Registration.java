@@ -40,4 +40,5 @@ public class Registration extends ActionEngine {
 		RegistrationWithMultipleData.verifyRegistrationWithMultipleData();
 
 	}
+	
 }

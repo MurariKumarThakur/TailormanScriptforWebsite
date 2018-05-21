@@ -149,7 +149,7 @@ public class ExcelReader {
 					row = getSheet(sheetName).getRow(rowNum);
 					Cell cell = row.getCell(col_Num);
 
-					 System.out.println(cell);
+					// System.out.println(cell);
 
 					// System.out.println(cell.getCellType());
 

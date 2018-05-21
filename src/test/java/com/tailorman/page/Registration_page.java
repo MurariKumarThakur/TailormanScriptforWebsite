@@ -3,6 +3,9 @@
  */
 package com.tailorman.page;
 
+import java.util.List;
+
+import org.apache.commons.collections4.bag.SynchronizedSortedBag;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
@@ -61,6 +64,12 @@ public class Registration_page extends ActionEngine {
 
 	@FindBy(how = How.XPATH, using = "//button[text()='REGISTER']")
 	WebElement RegisterButton;
+
+	@FindBy(how = How.XPATH, using = "//div[text()='error']")
+	List<WebElement> errorMessage;
+
+	@FindBy(how = How.XPATH, using = "//div[text()='success']")
+	WebElement successMessage;
 
 	public void redirectToRegistrationPage() {
 
@@ -151,20 +160,40 @@ public class Registration_page extends ActionEngine {
 			ActionEngine.sendKeys(city_Reg_Field,
 					pathManager.storeData.getColumeWiseData("RegistrationForm", "City", i));
 
-			
-			
 			ActionEngine.sendKeys(state_Reg_Field,
 					pathManager.storeData.getColumeWiseData("RegistrationForm", "State", i));
-
-
-			
-			
 
 			ActionEngine.clickOnEnterButton();
 			ActionEngine.sendKeys(landmark_Reg_Field,
 					pathManager.storeData.getColumeWiseData("RegistrationForm", "LandMark", i));
 			ActionEngine.sendKeys(refferral_Reg_Field,
 					pathManager.storeData.getColumeWiseData("RegistrationForm", "refferalCode", i));
+			RegisterButton.click();
+
+			ActionEngine.scrollIntoView(RegistrationLink);
+
+			int size = errorMessage.size();
+
+			if (size == 1) {
+				int expectedsize = 1;
+				Assert.assertEquals(size, expectedsize);
+
+				System.out.println("Account Not Created Error Message is Displaying ");
+			} else {
+
+				boolean expectedMessage = true;
+
+				boolean actualMessage = successMessage.isDisplayed();
+
+				Assert.assertEquals(actualMessage, expectedMessage);
+
+				System.out.println("Account Created  Successfully With Name--[ "
+						+ pathManager.storeData.getColumeWiseData("RegistrationForm", "Name", i) + " ] Eamil--[ "
+						+ pathManager.storeData.getColumeWiseData("RegistrationForm", "Email", i)
+						+ " ] phone Number --[ "
+						+ pathManager.storeData.getColumeWiseData("RegistrationForm", "Phone", i) + " ]");
+
+			}
 		}
 
 	}

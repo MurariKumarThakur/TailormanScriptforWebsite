@@ -23,13 +23,13 @@ public class Login_page extends ActionEngine {
 	@FindBy(how = How.XPATH, using = "//div[text()='LOGIN']")
 	WebElement LoginHeading;
 
-	@FindBy(how = How.XPATH, using = "//a[@class='facebook jKCQvr']")
+	@FindBy(how = How.XPATH, using = "//a[@id='tm_login_facebook']")
 	WebElement facebookLink;
 
-	@FindBy(how = How.XPATH, using = "//a[@class='google dIgkkV']")
+	@FindBy(how = How.XPATH, using = "//a[@id='tm_login_google']")
 	WebElement googleLink;
 
-	@FindBy(how = How.XPATH, using = "//div[@class='ui fluid input']//input[@type='text']")
+	@FindBy(how = How.XPATH, using = "//input[@id='tm_login_user_name']")
 	WebElement userNameField;
 
 	@FindBy(how = How.XPATH, using = "//input[@type='password']")
@@ -69,7 +69,10 @@ public class Login_page extends ActionEngine {
 	WebElement RegistrationPage;
 
 	@FindBy(how = How.XPATH, using = "//div[text()='error']")
-	WebElement erorMessage;
+	WebElement errorMessage;
+
+	@FindBy(how = How.XPATH, using = "//div[text()='success']")
+	WebElement successMessage;
 
 	@FindBy(how = How.XPATH, using = "//h4[text()='one time password']")
 	WebElement oneTimePassword;
@@ -109,8 +112,8 @@ public class Login_page extends ActionEngine {
 		ActionEngine.checkElementIsClickableOrNot(RegisterLink, RegistrationPage);
 		ActionEngine.navigateBack();
 
-		ActionEngine.checkElementIsClickableOrNot(ResetPasswordLink, erorMessage);
-		ActionEngine.checkElementIsClickableOrNot(erorMessage, erorMessage);
+		ActionEngine.checkElementIsClickableOrNot(ResetPasswordLink, errorMessage);
+		ActionEngine.checkElementIsClickableOrNot(errorMessage, errorMessage);
 
 	}
 
@@ -121,22 +124,32 @@ public class Login_page extends ActionEngine {
 
 			ActionEngine.sendKeys(userNameField,
 					pathManager.storeData.getColumeWiseData("LoginFunction", "UserName", i));
-             // System.out.println(pathManager.storeData.getColumeWiseData("LoginFunction", "Password", i));
+			
 			ActionEngine.sendKeys(passwrodField,
-			   
+
 					pathManager.storeData.getColumeWiseData("LoginFunction", "Password", i));
 			LoginButton.click();
+
+			try {
+				Thread.sleep(2000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 
 			int size = LoginButtons.size();
 
 			if (size == 1) {
 				boolean loginbutton = LoginButton.isDisplayed();
 				Assert.assertEquals(loginbutton, expectedResult);
+				System.out.println("Login Not Success");
 
-			} else {
+			} else if (size == 0) {
 
-				System.out.println("LOGIN SUCCESS");
+				System.out.println("Login Success");
+
 				driver.navigate().back();
+
 				ActionEngine.waitForElementVisibility(LoginButton);
 
 			}
@@ -144,7 +157,39 @@ public class Login_page extends ActionEngine {
 		}
 	}
 
-	public void LoginWithMultipleSetOfData() {
+	public void checkResetLinkIsWorkingOrNot() {
+
+		// try to check without email
+
+		ActionEngine.waitForElementVisibility(ResetPasswordLink);
+		ResetPasswordLink.click();
+		ActionEngine.waitForElementVisibility(errorMessage);
+		boolean ActualResult = errorMessage.isDisplayed();
+
+		Assert.assertEquals(ActualResult, true);
+
+		// try to check with wrong email
+
+		userNameField.sendKeys("murariraj.one@gmail.Murari");
+
+		ResetPasswordLink.click();
+
+		ActionEngine.waitForElementVisibility(errorMessage);
+
+		boolean errorMessageIsdisplaying = errorMessage.isDisplayed();
+
+		Assert.assertEquals(errorMessageIsdisplaying, true);
+
+		// reset button testing with valid email
+
+		ActionEngine.sendKeys(userNameField, "murariraj.one@gmail.com");
+
+		ResetPasswordLink.click();
+		ActionEngine.waitForElementVisibility(successMessage);
+
+		boolean successMessageIsDisplaying = successMessage.isDisplayed();
+
+		Assert.assertEquals(successMessageIsDisplaying, true);
 
 	}
 

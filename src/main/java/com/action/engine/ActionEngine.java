@@ -8,6 +8,8 @@ import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Action;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -310,6 +312,18 @@ public class ActionEngine extends DriverEngine {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+	}
+	public static void mouseOver(WebElement elm )
+	{
+		
+	    waitForElementVisibility(elm);
+		Actions act = new Actions(driver);
+		
+		 act.moveToElement(elm).perform();
+		 
+		 
+		
+		
 	}
 
 }

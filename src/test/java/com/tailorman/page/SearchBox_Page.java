@@ -21,7 +21,7 @@ import com.path.manager.pathManager;
  */
 public class SearchBox_Page extends ActionEngine {
 
-	@FindBy(how = How.XPATH, using = "//a[@class='ksrAiv']")
+	@FindBy(how = How.XPATH, using = "//a[@id='tm_header_search_button']")
 	WebElement SearchBox;
 
 	@FindBy(how = How.XPATH, using = "//div[contains(@class,'searchClass open-visible')]")
@@ -39,8 +39,7 @@ public class SearchBox_Page extends ActionEngine {
 	@FindBy(how = How.XPATH, using = "//img[@class='ui centered image fCwhdQ']")
 	WebElement ClickOnLogo;
 
-	@FindBy(how = How.XPATH, using = "//span[@class='kUaDtV']")
-	WebElement searchedResult;
+	
 
 	@FindBy(how = How.XPATH, using = "//li[@class='slide selected']")
 	WebElement ResultValidation;
