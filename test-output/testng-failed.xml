@@ -3,21 +3,17 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.tailorman.script.SearchBox">
+      <class name="com.tailorman.script.Login">
         <methods>
-          <include name="CheckUserIsAbleToTypeOrNot"/>
-          <include name="applicationResponseIfResultIsNotMatching"/>
-          <include name="verifyplaceholder"/>
+          <include name="loginWithMultipleSetOfData"/>
+          <include name="checkAllLinkIsRedirectingToCorrectPageOrNotOrLinkIsClickableOrNot"/>
+          <include name="resetButtonTesting"/>
           <include name="openBrowser"/>
-          <include name="checkSearchBoxExistance"/>
           <include name="endSuite"/>
-          <include name="SearchByProductCategory"/>
-          <include name="SearchByProductName"/>
-          <include name="searchBySkuNumber"/>
           <include name="startMethod"/>
-          <include name="checkSearchBoxInputDisplayingOrNot"/>
+          <include name="fieldVerificationInLoginpageSection"/>
         </methods>
-      </class> <!-- com.tailorman.script.SearchBox -->
+      </class> <!-- com.tailorman.script.Login -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

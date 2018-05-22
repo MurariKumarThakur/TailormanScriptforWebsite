@@ -46,7 +46,7 @@ public class SearchBox_Page extends ActionEngine {
 
 	public void checkSearchBoxExistance() {
 
-		ActionEngine.handleTailorManPopup();
+		
 
 		boolean ExpectedResult = true;
 		boolean ActualResult = SearchBox.isDisplayed();

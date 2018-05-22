@@ -1,14 +1,18 @@
 package com.base.engine;
 
+import java.util.NoSuchElementException;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
@@ -26,7 +30,7 @@ import com.path.manager.pathManager;
 
 public class DriverEngine {
 	public static  RemoteWebDriver driver;
-
+   static  WebDriverWait wait ;
 	
 	@BeforeSuite
 	@Parameters("browserName")
@@ -71,7 +75,7 @@ public class DriverEngine {
 		driver.manage().deleteAllCookies();
 		
 		driver.get(pathManager.config.getPropertyFileValue("tailorManWebsiteUrl"));
-
+		    handleTailorManPopup();
 	}
 	@AfterSuite
 	public void endSuite(){
@@ -85,6 +89,20 @@ public class DriverEngine {
 		
 		GetExtentReport.getStatus(result);
 		
+	}
+	public static void waitForElementVisibility(WebElement locator) {
+
+		wait = new WebDriverWait(driver, 35);
+		wait.pollingEvery(5, TimeUnit.SECONDS);
+		wait.ignoring(NoSuchElementException.class);
+		wait.until(ExpectedConditions.visibilityOf(locator));
+
+	}
+	public static void handleTailorManPopup() {
+		WebElement popuploc = driver.findElementByXPath("//i[contains(@class ,'subscribtion-close')]");
+		waitForElementVisibility(popuploc);
+		popuploc.click();
+
 	}
 	
 }

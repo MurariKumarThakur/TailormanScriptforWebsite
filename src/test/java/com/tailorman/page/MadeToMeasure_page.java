@@ -19,29 +19,31 @@ public class MadeToMeasure_page extends ActionEngine {
 	@FindBy(how = How.ID, using = "tm_header_made_to_measure")
 	WebElement MadeToMeasure;
 
-	@FindBy(how = How.XPATH, using = "//div[text()='Made-To-Measure']")
+	@FindBy(how = How.XPATH, using = "//div[text()='Made-To-Measure ']")
 
 	WebElement MadeToMeasureText;
 
-	@FindBy(how = How.XPATH, using = "//div[text()='At Home']")
+	@FindBy(how = How.XPATH, using = "(//div[text()='At Home'])[2]")
 	WebElement ATHomeLink;
 
-	@FindBy(how = How.XPATH, using = "//div[text()='Video Call']")
+	@FindBy(how = How.XPATH, using = "(//div[text()='Video Call'])[2]")
 	WebElement videoLink;
 
-	@FindBy(how = How.XPATH, using = "//div[text()='At Our Showrooms']")
+	@FindBy(how = How.XPATH, using = "(//div[text()='At Our Showrooms'])[2]")
 	WebElement AtOurShowrooms;
-	
+
 	@FindBy(how = How.XPATH, using = "//div[@class='headerlink item-menu-cls'][text()='Book A Home visit']")
 	WebElement bookAHomeVisitLink;
-	
-	@FindBy(how = How.XPATH, using = "//div[@class='tm_book_a_home_visit hero-button']")
+
+	@FindBy(how = How.XPATH, using = "//a[@class='tm_book_a_home_visit hero-button']")
 	WebElement bookAHomeVisitButton;
-	
+
 	@FindBy(how = How.XPATH, using = "//div[text()='Our Showrooms']")
 	WebElement OurShowroomsText;
 
 	public void checkMadeToMeasureLinkIsWorking() {
+
+		
 
 		ActionEngine.waitForElementVisibility(MadeToMeasure);
 
@@ -58,7 +60,7 @@ public class MadeToMeasure_page extends ActionEngine {
 	}
 
 	public void MadeToMeasureSectionElementVerification() {
-		
+
 		ActionEngine.mouseOver(MadeToMeasure);
 		ActionEngine.checkElementExistance(MadeToMeasure);
 		ActionEngine.checkElementExistance(ATHomeLink);
@@ -68,6 +70,7 @@ public class MadeToMeasure_page extends ActionEngine {
 	}
 
 	public void CheckLinkIsClickableOrNot(WebElement web, WebElement expectedWEb) {
+		boolean expectedText = true;
 		ActionEngine.mouseOver(MadeToMeasure);
 
 		ActionEngine.waitForElementVisibility(MadeToMeasureText);
@@ -76,18 +79,17 @@ public class MadeToMeasure_page extends ActionEngine {
 
 		ActionEngine.waitForElementVisibility(expectedWEb);
 
-		ActionEngine.navigateBack();
-		
-		ActionEngine.waitForElementVisibility(MadeToMeasure);
+		boolean actualText = expectedWEb.isDisplayed();
+
+		Assert.assertEquals(actualText, expectedText);
 
 	}
 
 	public void CheckAllGivenLinkIsClickableOrNot() {
-		
+
 		CheckLinkIsClickableOrNot(ATHomeLink, bookAHomeVisitLink);
 		CheckLinkIsClickableOrNot(videoLink, bookAHomeVisitButton);
-		CheckLinkIsClickableOrNot(videoLink, bookAHomeVisitButton);
-		
+		CheckLinkIsClickableOrNot(AtOurShowrooms, OurShowroomsText);
 
 	}
 
