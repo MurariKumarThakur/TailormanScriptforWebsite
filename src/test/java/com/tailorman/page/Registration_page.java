@@ -73,7 +73,7 @@ public class Registration_page extends ActionEngine {
 
 	public void redirectToRegistrationPage() {
 
-		ActionEngine.handleTailorManPopup();
+		
 
 		ActionEngine.waitForElementVisibility(MyAccountLink);
 

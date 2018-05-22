@@ -79,7 +79,7 @@ public class Login_page extends ActionEngine {
 
 	public void redirectToLoginPage() {
 
-		ActionEngine.handleTailorManPopup();
+		
 		ActionEngine.waitForElementVisibility(MyAccountLink);
 		MyAccountLink.click();
 		ActionEngine.waitForElementVisibility(LoginLink);

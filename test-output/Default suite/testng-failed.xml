@@ -3,16 +3,16 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.tailorman.script.Cart">
+      <class name="com.tailorman.script.MadeToMeasure">
         <methods>
+          <include name="CheckAllGivenLinkIsClickableOrNot"/>
           <include name="openBrowser"/>
           <include name="endSuite"/>
-          <include name="checkCartSectionGivenLinkIsWorkingOrNot"/>
-          <include name="checkCartLinkIsWorking"/>
+          <include name="MadeToMeasureSectionElementVerification"/>
           <include name="startMethod"/>
-          <include name="checkCartSectionElementExistance"/>
+          <include name="checkMadeToMeasureLinkIsWorking"/>
         </methods>
-      </class> <!-- com.tailorman.script.Cart -->
+      </class> <!-- com.tailorman.script.MadeToMeasure -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

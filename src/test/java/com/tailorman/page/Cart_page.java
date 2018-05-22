@@ -33,7 +33,7 @@ public class Cart_page  extends ActionEngine{
 
 	public void checkCartLinkIsWorking() {
 		
-		ActionEngine.handleTailorManPopup();
+		
 		ActionEngine.waitForElementVisibility(checkOutButton);
 		checkOutButton.click();
 

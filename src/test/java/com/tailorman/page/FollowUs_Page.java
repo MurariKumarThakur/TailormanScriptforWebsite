@@ -53,7 +53,7 @@ public class FollowUs_Page extends ActionEngine {
 	public void checkFollowUsLink()
 
 	{
-		ActionEngine.handleTailorManPopup();
+		
 		String Expected = "FOLLOW US";
 
 		String followUsText = followUsLink.getText();

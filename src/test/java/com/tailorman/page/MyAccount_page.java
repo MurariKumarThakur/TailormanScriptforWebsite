@@ -58,7 +58,7 @@ public class MyAccount_page extends ActionEngine {
 
 	{
 		
-		ActionEngine.handleTailorManPopup();
+		
 		
 		boolean ExpectedResult = true;
 
