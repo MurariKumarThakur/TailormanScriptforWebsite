@@ -73,20 +73,20 @@ public class DesignYourOwn_page extends ActionEngine {
 		ActionEngine.checkElementExistance(ShirtsHeading);
 		ActionEngine.checkElementExistance(TrousersHeading);
 		ActionEngine.checkElementExistance(MoreHeading);
+		tailorManLogo.click();
 
 	}
-	
-	
-	public void checkAllCategoryLinkIsWorking(List<WebElement>getNumberOfLinkBasedOnCategory,String methodReturnXpath,String passCategoryNameInCapitalLetter ){
-		
-		
+
+	public void checkAllCategoryLinkIsWorking(List<WebElement> getNumberOfLinkBasedOnCategory, String methodReturnXpath,
+			String passCategoryNameInCapitalLetter) {
+		ActionEngine.waitForElementVisibility(DesignYourOwn);
+		ActionEngine.mouseOver(DesignYourOwn);
+		ActionEngine.waitForElementVisibility(ShirtsHeading);
 		int designYourOwnSuiteNum = getNumberOfLinkBasedOnCategory.size();
 
 		for (int i = 1; i <= designYourOwnSuiteNum; i++) {
-			
-		  String categoryName =	methodReturnXpath ;
-              
-		     
+
+			String categoryName = methodReturnXpath + "[" + i + "]";
 
 			WebElement getLinkNameOneByOne = driver.findElement(By.xpath(categoryName));
 
@@ -98,146 +98,85 @@ public class DesignYourOwn_page extends ActionEngine {
 
 			String afterClickGetText = getCategoryNameActiveSection.getText();
 
-			if (afterClickGetText.contains(LinkName.toUpperCase()) && afterClickGetText.endsWith(passCategoryNameInCapitalLetter)) {
+			if (afterClickGetText.contains(LinkName.toUpperCase())
+					&& afterClickGetText.contains(passCategoryNameInCapitalLetter)) {
 
-				if (SearchedRecord.size() >= 1) {
-					System.out.println(LinkName+" Link  Is working ");		
-
+				if (SearchedRecord.size() >=1) {
+					
+					System.out.println("Searched Result Is Coming For "+LinkName);
 					
 				}
 
-				Assert.assertTrue(afterClickGetText.contains(LinkName.toUpperCase()
-						));
-
+				Assert.assertTrue(afterClickGetText.contains(LinkName.toUpperCase()));
+				System.out.println(LinkName + " Link  Is working ");
 				ActionEngine.mouseOver(DesignYourOwn);
 
 				ActionEngine.waitForElementVisibility(ShirtsHeading);
 
-			}else if(afterClickGetText.contains(LinkName)) 
-			{
+			} else if (afterClickGetText.contains(LinkName.toUpperCase())) {
 
+				
 				if (SearchedRecord.size() >= 1) {
 
-					System.out.println(LinkName+" Link  Is working ");
+					
+					System.out.println("Searched Result Is Coming For "+LinkName);
+				
+				
 
 				}
+				
+				System.out.println(LinkName + " Link  Is working ");
+				
 				Assert.assertTrue(afterClickGetText.contains(LinkName));
 
 				ActionEngine.mouseOver(DesignYourOwn);
 
 				ActionEngine.waitForElementVisibility(ShirtsHeading);
-				
+
 			}
-			
-			
+
 			else {
 
-				System.out.println(LinkName+" Link  Is Not working  ");
+				System.out.println(LinkName + " Link  Is Not working  ");
 				ActionEngine.mouseOver(DesignYourOwn);
 
 				ActionEngine.waitForElementVisibility(ShirtsHeading);
 			}
 
 		}
-		
-			
-		
-		
+		tailorManLogo.click();
 	}
-	
-	
-	
-	
-	
-	public String categoryLoc(int value){
-		
-		
-	return	 "(//div[contains(@class,'ltwrapper')]//a[contains(@id,'suits')])[" + value + "]";	
-		
+
+	public String SuitecategoryLoc() {
+
+		return "(//div[contains(@class,'ltwrapper')]//a[contains(@id,'suits')])";
+
 	}
-	
+
+	public String ShirtcategoryLoc() {
+
+		return "(//div[contains(@class,'ltwrapper')]//a[contains(@id,'shirts')])";
+
+	}
+
+	public String TrousercategoryLoc() {
+
+		return "(//div[contains(@class,'ltwrapper')]//a[contains(@id,'trousers')])";
+
+	}
 
 	public void checkReadyToDesignSectionAllSuiteLinkIsWorkingOrNot() {
-		
-		
-		
-	//	checkAllCategoryLinkIsWorking(GetAllDesignYourOwnSuite, categoryLoc(), "SUITE");
-		
-		
+
+		checkAllCategoryLinkIsWorking(GetAllDesignYourOwnSuite, SuitecategoryLoc(), "SUITS");
+
+		checkAllCategoryLinkIsWorking(GetAllDesignYourOwnShirt, ShirtcategoryLoc(), "SHIRTS");
+
+		checkAllCategoryLinkIsWorking(GetAllDesignYourOwnTrouser, TrousercategoryLoc(), "TROUSER");
 
 		
-/*
-		
-		int designYourOwnSuiteNum = GetAllDesignYourOwnSuite.size();
-
-		for (int i = 1; i <= designYourOwnSuiteNum; i++) {
-			
-		String categoryName =	categoryLoc(i);
-              
-		     
-
-			WebElement suiteLocOneByOne = driver.findElement(By.xpath(categoryName));
-
-			String SuiteCategoryName = suiteLocOneByOne.getText();
-
-			suiteLocOneByOne.click();
-
-			ActionEngine.waitForElementVisibility(getCategoryNameActiveSection);
-
-			String afterClickGetText = getCategoryNameActiveSection.getText();
-
-			if (afterClickGetText.contains(SuiteCategoryName.toUpperCase()) && afterClickGetText.endsWith("SUITS")) {
-
-				if (SearchedRecord.size() >= 1) {
-					System.out.println(SuiteCategoryName+" Link  Is working ");		
-
-					
-				}
-
-				Assert.assertTrue(afterClickGetText.contains(SuiteCategoryName.toUpperCase()
-						));
-
-				ActionEngine.mouseOver(DesignYourOwn);
-
-				ActionEngine.waitForElementVisibility(ShirtsHeading);
-
-			}else if(afterClickGetText.contains(SuiteCategoryName)) 
-			{
-
-				if (SearchedRecord.size() >= 1) {
-
-					System.out.println(SuiteCategoryName+" Link  Is working ");
-
-				}
-				Assert.assertTrue(afterClickGetText.contains(SuiteCategoryName));
-
-				ActionEngine.mouseOver(DesignYourOwn);
-
-				ActionEngine.waitForElementVisibility(ShirtsHeading);
-				
-			}
-			
-			
-			else {
-
-				System.out.println(SuiteCategoryName+" Link  Is Not working  ");
-				ActionEngine.mouseOver(DesignYourOwn);
-
-				ActionEngine.waitForElementVisibility(ShirtsHeading);
-			}
-
-		}
-		*/
-		
-
 	}
-	
-	
-	public void DesignYourOwnShirtAllLinkIsWorkingOrNot()
-	{
-		
-		
-		
-		
+
+	public void DesignYourOwnShirtAllLinkIsWorkingOrNot() {
+
 	}
 }

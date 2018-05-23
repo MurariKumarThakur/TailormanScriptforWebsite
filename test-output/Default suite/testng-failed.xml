@@ -3,7 +3,6 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-<<<<<<< HEAD
       <class name="com.tailorman.script.DesignYourOwn">
         <methods>
           <include name="openBrowser"/>
@@ -12,19 +11,6 @@
           <include name="startMethod"/>
         </methods>
       </class> <!-- com.tailorman.script.DesignYourOwn -->
-=======
-      <class name="com.tailorman.script.Login">
-        <methods>
-          <include name="loginWithMultipleSetOfData"/>
-          <include name="checkAllLinkIsRedirectingToCorrectPageOrNotOrLinkIsClickableOrNot"/>
-          <include name="resetButtonTesting"/>
-          <include name="openBrowser"/>
-          <include name="endSuite"/>
-          <include name="startMethod"/>
-          <include name="fieldVerificationInLoginpageSection"/>
-        </methods>
-      </class> <!-- com.tailorman.script.Login -->
->>>>>>> c6be712f55b52ea685001e1846bb41e2096a5aaf
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
