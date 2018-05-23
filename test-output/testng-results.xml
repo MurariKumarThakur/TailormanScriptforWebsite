@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="14984" started-at="2018-05-22T06:54:50Z" finished-at="2018-05-22T06:55:05Z">
+  <suite name="Default suite" duration-ms="43608" started-at="2018-05-23T14:00:27Z" finished-at="2018-05-23T14:01:10Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="14984" started-at="2018-05-22T06:54:50Z" finished-at="2018-05-22T06:55:05Z">
-      <class name="com.tailorman.script.MadeToMeasure">
-        <test-method status="PASS" signature="openBrowser(java.lang.String)[pri:0, instance:com.tailorman.script.MadeToMeasure@1e127982]" name="openBrowser" is-config="true" duration-ms="15551" started-at="2018-05-22T12:24:34Z" finished-at="2018-05-22T12:24:50Z">
+    <test name="Default test" duration-ms="43608" started-at="2018-05-23T14:00:27Z" finished-at="2018-05-23T14:01:10Z">
+      <class name="com.tailorman.script.DesignYourOwn">
+        <test-method status="PASS" signature="openBrowser(java.lang.String)[pri:0, instance:com.tailorman.script.DesignYourOwn@1e127982]" name="openBrowser" is-config="true" duration-ms="25122" started-at="2018-05-23T19:30:01Z" finished-at="2018-05-23T19:30:27Z">
           <params>
             <param index="0">
               <value>
@@ -18,56 +18,56 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="checkMadeToMeasureLinkIsWorking()[pri:1, instance:com.tailorman.script.MadeToMeasure@1e127982]" name="checkMadeToMeasureLinkIsWorking" duration-ms="12897" started-at="2018-05-22T12:24:50Z" finished-at="2018-05-22T12:25:02Z">
+        <test-method status="PASS" signature="CheckDesignYourOwnSectionMouseOverIsWorkingOrNot()[pri:1, instance:com.tailorman.script.DesignYourOwn@1e127982]" name="CheckDesignYourOwnSectionMouseOverIsWorkingOrNot" duration-ms="309" started-at="2018-05-23T19:30:27Z" finished-at="2018-05-23T19:30:27Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- checkMadeToMeasureLinkIsWorking -->
-        <test-method status="PASS" signature="startMethod(org.testng.ITestResult)[pri:0, instance:com.tailorman.script.MadeToMeasure@1e127982]" name="startMethod" is-config="true" duration-ms="159" started-at="2018-05-22T12:25:02Z" finished-at="2018-05-22T12:25:03Z">
+        </test-method> <!-- CheckDesignYourOwnSectionMouseOverIsWorkingOrNot -->
+        <test-method status="PASS" signature="startMethod(org.testng.ITestResult)[pri:0, instance:com.tailorman.script.DesignYourOwn@1e127982]" name="startMethod" is-config="true" duration-ms="150" started-at="2018-05-23T19:30:27Z" finished-at="2018-05-23T19:30:27Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=checkMadeToMeasureLinkIsWorking status=SUCCESS method=MadeToMeasure.checkMadeToMeasureLinkIsWorking()[pri:1, instance:com.tailorman.script.MadeToMeasure@1e127982] output={null}]]]>
+                <![CDATA[[TestResult name=CheckDesignYourOwnSectionMouseOverIsWorkingOrNot status=SUCCESS method=DesignYourOwn.CheckDesignYourOwnSectionMouseOverIsWorkingOrNot()[pri:1, instance:com.tailorman.script.DesignYourOwn@1e127982] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startMethod -->
-        <test-method status="PASS" signature="MadeToMeasureSectionElementVerification()[pri:2, instance:com.tailorman.script.MadeToMeasure@1e127982]" name="MadeToMeasureSectionElementVerification" duration-ms="275" started-at="2018-05-22T12:25:03Z" finished-at="2018-05-22T12:25:03Z">
+        <test-method status="PASS" signature="verifyDesignYourOwnMainHeading()[pri:2, instance:com.tailorman.script.DesignYourOwn@1e127982]" name="verifyDesignYourOwnMainHeading" duration-ms="239" started-at="2018-05-23T19:30:27Z" finished-at="2018-05-23T19:30:27Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- MadeToMeasureSectionElementVerification -->
-        <test-method status="PASS" signature="startMethod(org.testng.ITestResult)[pri:0, instance:com.tailorman.script.MadeToMeasure@1e127982]" name="startMethod" is-config="true" duration-ms="1" started-at="2018-05-22T12:25:03Z" finished-at="2018-05-22T12:25:03Z">
+        </test-method> <!-- verifyDesignYourOwnMainHeading -->
+        <test-method status="PASS" signature="startMethod(org.testng.ITestResult)[pri:0, instance:com.tailorman.script.DesignYourOwn@1e127982]" name="startMethod" is-config="true" duration-ms="0" started-at="2018-05-23T19:30:27Z" finished-at="2018-05-23T19:30:27Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=MadeToMeasureSectionElementVerification status=SUCCESS method=MadeToMeasure.MadeToMeasureSectionElementVerification()[pri:2, instance:com.tailorman.script.MadeToMeasure@1e127982] output={null}]]]>
+                <![CDATA[[TestResult name=verifyDesignYourOwnMainHeading status=SUCCESS method=DesignYourOwn.verifyDesignYourOwnMainHeading()[pri:2, instance:com.tailorman.script.DesignYourOwn@1e127982] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startMethod -->
-        <test-method status="PASS" signature="CheckAllGivenLinkIsClickableOrNot()[pri:3, instance:com.tailorman.script.MadeToMeasure@1e127982]" name="CheckAllGivenLinkIsClickableOrNot" duration-ms="1620" started-at="2018-05-22T12:25:03Z" finished-at="2018-05-22T12:25:05Z">
+        <test-method status="PASS" signature="checkReadyToDesignSectionAllSuiteLinkIsWorkingOrNot()[pri:3, instance:com.tailorman.script.DesignYourOwn@1e127982]" name="checkReadyToDesignSectionAllSuiteLinkIsWorkingOrNot" duration-ms="42888" started-at="2018-05-23T19:30:27Z" finished-at="2018-05-23T19:31:10Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- CheckAllGivenLinkIsClickableOrNot -->
-        <test-method status="PASS" signature="startMethod(org.testng.ITestResult)[pri:0, instance:com.tailorman.script.MadeToMeasure@1e127982]" name="startMethod" is-config="true" duration-ms="0" started-at="2018-05-22T12:25:05Z" finished-at="2018-05-22T12:25:05Z">
+        </test-method> <!-- checkReadyToDesignSectionAllSuiteLinkIsWorkingOrNot -->
+        <test-method status="PASS" signature="startMethod(org.testng.ITestResult)[pri:0, instance:com.tailorman.script.DesignYourOwn@1e127982]" name="startMethod" is-config="true" duration-ms="1" started-at="2018-05-23T19:31:10Z" finished-at="2018-05-23T19:31:10Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=CheckAllGivenLinkIsClickableOrNot status=SUCCESS method=MadeToMeasure.CheckAllGivenLinkIsClickableOrNot()[pri:3, instance:com.tailorman.script.MadeToMeasure@1e127982] output={null}]]]>
+                <![CDATA[[TestResult name=checkReadyToDesignSectionAllSuiteLinkIsWorkingOrNot status=SUCCESS method=DesignYourOwn.checkReadyToDesignSectionAllSuiteLinkIsWorkingOrNot()[pri:3, instance:com.tailorman.script.DesignYourOwn@1e127982] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startMethod -->
-        <test-method status="PASS" signature="endSuite()[pri:0, instance:com.tailorman.script.MadeToMeasure@1e127982]" name="endSuite" is-config="true" duration-ms="1859" started-at="2018-05-22T12:25:05Z" finished-at="2018-05-22T12:25:06Z">
+        <test-method status="PASS" signature="endSuite()[pri:0, instance:com.tailorman.script.DesignYourOwn@1e127982]" name="endSuite" is-config="true" duration-ms="2190" started-at="2018-05-23T19:31:10Z" finished-at="2018-05-23T19:31:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endSuite -->
-      </class> <!-- com.tailorman.script.MadeToMeasure -->
+      </class> <!-- com.tailorman.script.DesignYourOwn -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
